@@ -1,0 +1,11 @@
+{
+  "name": "setup",
+  "version": "0.0.1",
+  "main": "tx_firer.js",
+  "dependencies": {
+    "command-line-args": "^2.1.6",
+    "jayson": "^2.0.0",
+    "web3": "^0.15.2"
+  }
+
+}

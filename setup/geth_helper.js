@@ -9,15 +9,18 @@ var options = cli.parse();
 
 console.log('starting with options:',JSON.stringify(options));
 
+// set up jayson and web3 objects
+
+var jayson = require('jayson');
+var client1 = jayson.client.http('http://192.168.99.100:8541');
+var client2 = jayson.client.http('http://192.168.99.100:8542');
+
 const Web3 = require('web3');
 const web3geth1 = new Web3();
 const web3geth2 = new Web3();
 
-setProvider(web3geth1, '192.168.99.100', 8545);
-setProvider(web3geth2, '192.168.99.100', 8546);
-
-createAndUnlockAccount(web3geth1);
-createAndUnlockAccount(web3geth2);
+setProvider(web3geth1, '192.168.99.100', 8541);
+setProvider(web3geth2, '192.168.99.100', 8542);
 
 function setProvider(web3, gethHost, gethPort) {
     var url = 'http://'+gethHost+':'+gethPort;
@@ -25,62 +28,75 @@ function setProvider(web3, gethHost, gethPort) {
     web3.setProvider(new web3.providers.HttpProvider(url));
 }
 
-function createAndUnlockAccount(web3) {
+// create accounts
+
+createAccount(web3geth1);
+createAccount(web3geth2);
+
+function createAccount(web3) {
     console.log('creating account with password', 'mattspass');
     var address = web3.personal.newAccount('mattspass');
     console.log('Address: ',address);
 }
 
 
+// =Join two nodes together
 
-// var jayson = require('jayson');
-// var client1 = jayson.client.http('http://192.168.99.100:8545');
+// ******************* need to work out how to join nodes together *******************
+
+
+
+
+
+
+// fund accounts
+
+// startBothMining()
+// client1.request('miner_start', [1], logResponse);
+
+
+// mining functions
+
+// var balanceCheckerTimer;
 //
-// client1.request('eth_coinbase',[],logResponse)
+// function startBothMining() {
+//     console.log('starting both nodes mining')
+//     client1.request('miner_start', [1], logResponse);
+//     client2.request('miner_start', [1], logResponse);
+//     balanceCheckerTimer = setInterval(checkBalancesNonZero, 2000); // repeats call back every 2000ms
+// }
 //
-// function logResponse(err, response){
-//     if(err){
-//         console.log(err)
+// function stopBothMining(){
+//     console.log('stopping both nodes mining')
+//     client1.request('miner_stop', [1], logResponse);
+//     client2.request('miner_stop', [1], logResponse);
+//
+// }
+//
+// function checkBalancesNonZero() {
+//     if (hasEther(web3geth1) && hasEther(web3geth2)) {
+//         console.log('oooh, both balances now non-zero...');
+//         console.log('stopping ing mining in 5s so that it has some ether...');
+//         setTimeout(stopBothMining, 5000);
+//         clearInterval(balanceCheckerTimer);
 //     } else {
-//         console.log(response)
+//         console.log('(still) waiting for both accounts to have ether...');
 //     }
 // }
 //
-// const Web3 = require('web3');
 //
-// const geth_1 = new Web3;
-//
-// // var prov = geth_1.providers.HttpProvider('http://192.168.99.100:8545');
-//
-// geth_1.setProvider(new geth_1.providers.HttpProvider('http://192.168.99.100:8545'))
-//
-//
-// console.log('api version: ' + geth_1.version.api)
-// console.log('currentProvider: ' + geth_1.currentProvider)
-// console.log('isConnected(): ' + geth_1.isConnected())
-//
-// createAndUnlockAccount(geth_1)
-//
-// function createAndUnlockAccount(web3) {
-//     console.log('creating account with password', 'mattspass');
-//     var address = web3.personal.newAccount('mattspass');
-//     console.log('Account address: ', address);
+// function hasEther(web3) {
+//     var balance = web3.eth.getBalance(web3.eth.coinbase);
+//     console.log(balance.toString());
+//     return balance.greaterThan(0)
 // }
-//
-//
-// console.log(geth_1.eth.accounts);
 
+// reusable response call back function
 
-// setProvider(geth_1,'192.168.99.100',8545)
-//
-// // console.log(geth_1);
-//
-//
-// // geth_1.eth.coinbase
-//
-//
-// function setProvider(web3, gethHost, gethPort) {
-//     var url = 'http://'+gethHost+':'+gethPort;
-//     console.log('web3 connect to:',url);
-//     web3.setProvider(new web3.providers.HttpProvider(url));
-// }
+function logResponse(err, response){
+    if (err) {
+        console.log('err: ',JSON.stringify(err));
+    } else {
+        console.log('response: ',JSON.stringify(response));
+    }
+}

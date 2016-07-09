@@ -41,9 +41,44 @@ function createAccount(web3) {
 
 
 // =Join two nodes together
+joinHostsTogether()
 
 // ******************* need to work out how to join nodes together *******************
+function joinHostsTogether() {
+    client1.request('admin_nodeInfo', [], nodeInfoResponse);
+}
 
+function nodeInfoResponse(err, response){
+    if (err) {
+        console.log('err: ',JSON.stringify(err));
+    } else {
+        var id = response.result.id;
+        var enode = 'enode://'+id+'@'+'172.21.0.2' + ':30303';
+        // console.log(enode)
+        console.log("Attaching geth_2 to geth_1");
+        client2.request('admin_addPeer', [enode],addPeerResponse)
+
+    }
+}
+
+function addPeerResponse(err, response) {
+    if (err) {
+        console.log('addPeerResponse err: ', JSON.stringify(err));
+    } else {
+        console.log('addPeerResponse response: ', JSON.stringify(response));
+        setTimeout(checkPeers,1000);
+    }
+}
+
+function checkPeers(){
+    console.log('Registered peer - checking');
+    client1.request('admin_peers', null, function (err, response) {
+        console.log('client1:' + JSON.stringify(response));
+    });
+    client2.request('admin_peers', null, function (err, response) {
+        console.log('client2:' + JSON.stringify(response));
+    });
+}
 
 
 

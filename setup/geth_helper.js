@@ -66,7 +66,7 @@ function addPeerResponse(err, response) {
         console.log('addPeerResponse err: ', JSON.stringify(err));
     } else {
         console.log('addPeerResponse response: ', JSON.stringify(response));
-        setTimeout(checkPeers,1000);
+        setTimeout(checkPeers,10000);
     }
 }
 
@@ -97,7 +97,7 @@ var balanceCheckerTimer;
 function startBothMining() {
     console.log('starting both nodes mining')
     client1.request('miner_start', [1], logResponse);
-    // client2.request('miner_start', [1], logResponse);
+    client2.request('miner_start', [1], logResponse);
     balanceCheckerTimer = setInterval(checkBalancesNonZero, 2000); // repeats call back every 2000ms
 }
 

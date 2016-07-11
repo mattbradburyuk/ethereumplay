@@ -1,10 +1,12 @@
 version: '2'
 services:
   geth_1:
-    image: ethereumplay/geth_1.4.9_vanilla
+    image: ethereumplay/geth_1.4.7_vanilla
     ports:
-     - "8545:8545"
+     - "8541:8545"
+     - "30301:30303"
   geth_2:
-    image: ethereumplay/geth_1.4.9_vanilla
+    image: ethereumplay/geth_1.4.7_vanilla
     ports:
-     - "8546:8545"
+     - "8542:8545"
+     - "30302:30303"

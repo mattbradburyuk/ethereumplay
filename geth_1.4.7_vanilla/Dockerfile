@@ -4,7 +4,7 @@ WORKDIR /root/
 
 RUN apt-get update && apt-get install -y git build-essential libgmp3-dev golang
 RUN git clone https://github.com/ethereum/go-ethereum
-RUN (cd go-ethereum && git checkout v1.4.9)
+RUN (cd go-ethereum && git checkout v1.4.7)
 
 RUN (cd go-ethereum && make geth)
 

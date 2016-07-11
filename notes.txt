@@ -1,0 +1,10 @@
+notes:
+
+to get to a console on a running geth image:
+
+    $ docker exec -it <container_name> bash
+    # cd go-ethereum/build/bin
+    # ./geth attach
+
+"enode://6b88b0834c2c69a2919935d81ad8955faa91b8da8198055ca149423d0db53fe3968a2a4f22674ce086702f395a98e769a8de2b33785f350c7018003f17e53ee3@172.21.0.2:30303"
+enode://6b88b0834c2c69a2919935d81ad8955faa91b8da8198055ca149423d0db53fe3968a2a4f22674ce086702f395a98e769a8de2b33785f350c7018003f17e53ee3@172.21.0.2:30303

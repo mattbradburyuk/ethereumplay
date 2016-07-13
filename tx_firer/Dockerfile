@@ -12,4 +12,5 @@ RUN npm install
 
 COPY . /home/tx_firer/
 
+
 ENTRYPOINT node tx_firer.js

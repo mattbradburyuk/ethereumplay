@@ -1,3 +1,6 @@
+
+// checks the ether balance on each of the geth main accounts (accounts[0], assumed to be coinbase)
+
 const Web3 = require('web3');
 const web3geth1 = new Web3();
 const web3geth2 = new Web3();

@@ -30,5 +30,5 @@ EXPOSE 30303
 
 ENV TERM=xterm-256color
 
-
+# remember to remove --nat
 ENTRYPOINT ["/root/go-ethereum/build/bin/geth", "--verbosity", "6", "--networkid", "12902", "--rpc", "--jitvm=false", "--rpcaddr", "0.0.0.0", "--nodiscover", "--rpcapi", "eth,net,web3,admin,miner,personal"]

@@ -1,3 +1,7 @@
+
+// send a tx from geth_1 to geth_2 via web3 api
+
+
 const Web3 = require('web3');
 const web3geth1 = new Web3();
 const web3geth2 = new Web3();
@@ -15,13 +19,11 @@ function setProvider(web3, gethHost, gethPort) {
 var addr1 = web3geth1.eth.accounts[0];
 var addr2 = web3geth2.eth.accounts[0];
 
-// web3geth1.personal.unlockAccount(web3geth1.eth.accounts[0],'mattspass');
-// web3geth2.personal.unlockAccount(web3geth2.eth.accounts[0],'mattspass');
 
 console.log('Pre tx: ');
 logBals();
 
-web3geth2.eth.sendTransaction({from:addr2, to: addr1, value: 1000});
+web3geth1.eth.sendTransaction({from:addr1, to: addr2, value: 1000});
 
 function logBals(){
 

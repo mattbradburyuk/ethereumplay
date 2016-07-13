@@ -12,5 +12,6 @@ RUN npm install
 
 COPY . /home/tx_firer/
 
+EXPOSE 8081
 
 ENTRYPOINT node tx_firer.js

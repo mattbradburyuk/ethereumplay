@@ -9,11 +9,13 @@ const Web3 = require('web3');
 const web3geth1 = new Web3();
 const web3geth2 = new Web3();
 
-// setProvider(web3geth1, '172.21.0.2', 8545); // need to get these to pick up automatically as they are not always the same
-// setProvider(web3geth2, '172.21.0.3', 8545);
 
-setProvider(web3geth1, '192.168.99.100', 8541);
-setProvider(web3geth2, '192.168.99.100', 8542);
+setProvider(web3geth1, '127.21.0.2', 8545); // need to get these to pick up automatically as they are not always the same
+setProvider(web3geth2, '127.21.0.3', 8545); // big fat and dangerous hack
+
+
+// setProvider(web3geth1, '192.168.99.100', 8541);
+// setProvider(web3geth2, '192.168.99.100', 8542);
 
 
 function setProvider(web3, gethHost, gethPort) {

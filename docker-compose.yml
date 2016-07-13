@@ -10,4 +10,15 @@ services:
     ports:
      - "8542:8545"
      - "30302:30303"
-
+    depends_on:
+     - geth_1
+  tx_firer:
+    image: ethereumplay/tx_firer
+    ports:
+     - "8081:8081"
+    depends_on:
+     - geth_2
+  tx_listener:
+    image: ethereumplay/tx_listener
+    depends_on:
+     - tx_firer

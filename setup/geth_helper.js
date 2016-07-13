@@ -11,6 +11,15 @@
 
 
 
+
+// Warning ------ massive hack ------
+// joining two nodes together requires geth_1 to have ip 127.21.0.2,
+// this is acheived by adding dependencies into the docker-compose.yml
+// this is very dodgy as can't guarantee that docker will assign this ip
+
+
+
+
 // command line read in for future expansion (possibly making it take the ips/ports in)
 
 const commandLineArgs = require('command-line-args');

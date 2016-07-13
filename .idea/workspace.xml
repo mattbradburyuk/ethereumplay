@@ -2,19 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f6ad228-d260-4ff5-837c-b34fd0388d2c" name="Default" comment="geth_helper.js in progress, need to join nodes together next">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/geth_1.4.7_vanilla/analyse transaction to move ether.xlsx" afterPath="$PROJECT_DIR$/geth_1.4.7_vanilla/analyse transaction to move ether.xlsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tx_listener/Dockerfile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tx_listener/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tx_listener/tx_listener.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tx_listener/tx_listenerBuild.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docker-compose.yml" afterPath="$PROJECT_DIR$/docker-compose.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/geth_1.4.7_vanilla/CustomGenesis.json" afterPath="$PROJECT_DIR$/geth_1.4.7_vanilla/CustomGenesis.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/geth_1.4.7_vanilla/Dockerfile" afterPath="$PROJECT_DIR$/geth_1.4.7_vanilla/Dockerfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/geth_1.4.7_vanilla/dockerBuild.sh" afterPath="$PROJECT_DIR$/geth_1.4.7_vanilla/dockerBuild.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/geth_1.4.9_vanilla/CustomGenesis.json" afterPath="$PROJECT_DIR$/geth_1.4.9_vanilla/CustomGenesis.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notes.txt" afterPath="$PROJECT_DIR$/notes.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_and_play/rpc_poke.js" afterPath="$PROJECT_DIR$/test_and_play/rpc_poke.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_and_play/rpc_startMining.js" afterPath="$PROJECT_DIR$/test_and_play/rpc_startMining.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_and_play/rpc_stopMining.js" afterPath="$PROJECT_DIR$/test_and_play/rpc_stopMining.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_and_play/web3_checkBals.js" afterPath="$PROJECT_DIR$/test_and_play/web3_checkBals.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_and_play/web3_sendtx.js" afterPath="$PROJECT_DIR$/test_and_play/web3_sendtx.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/setup/geth_helper.js" afterPath="$PROJECT_DIR$/setup/geth_helper.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_log.txt" afterPath="$PROJECT_DIR$/test_log.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tx_firer/Dockerfile" afterPath="$PROJECT_DIR$/tx_firer/Dockerfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tx_firer/tx_firer.js" afterPath="$PROJECT_DIR$/tx_firer/tx_firer.js" />
     </list>
@@ -37,72 +32,114 @@
     <favorites_list name="ethereumplay" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="tx_firer.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/tx_firer/tx_firer.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="225">
-                  <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/tx_firer/Dockerfile">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="225">
-                  <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="docker-compose.yml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="web3_sendtx.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/test_and_play/web3_sendtx.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="540">
-                  <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="geth_helper.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/setup/geth_helper.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="36" selection-end-column="47" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="tx_firer.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tx_firer/tx_firer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="372">
+              <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tx_firer/Dockerfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tx_listener/Dockerfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tx_firer/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tx_listener/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tx_listenerBuild.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tx_listener/tx_listenerBuild.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tx_listener.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tx_listener/tx_listener.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="15" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tx_firerBuild.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tx_firer/tx_firerBuild.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="docker-compose.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="geth_helper.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/setup/geth_helper.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="72" selection-start-line="17" selection-start-column="72" selection-end-line="17" selection-end-column="72" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="package_json" />
         <option value="JavaScript File" />
+        <option value="package_json" />
       </list>
     </option>
   </component>
@@ -143,11 +180,15 @@
         <option value="$PROJECT_DIR$/test_and_play/rpc_startMining.js" />
         <option value="$PROJECT_DIR$/test_and_play/rpc_stopMining.js" />
         <option value="$PROJECT_DIR$/test_and_play/web3_checkBals.js" />
-        <option value="$PROJECT_DIR$/setup/geth_helper.js" />
-        <option value="$PROJECT_DIR$/tx_firer/Dockerfile" />
-        <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/test_and_play/web3_sendtx.js" />
+        <option value="$PROJECT_DIR$/tx_firer/Dockerfile" />
+        <option value="$PROJECT_DIR$/setup/geth_helper.js" />
         <option value="$PROJECT_DIR$/tx_firer/tx_firer.js" />
+        <option value="$PROJECT_DIR$/tx_listener/Dockerfile" />
+        <option value="$PROJECT_DIR$/tx_listener/package.json" />
+        <option value="$PROJECT_DIR$/tx_listener/tx_listenerBuild.sh" />
+        <option value="$PROJECT_DIR$/tx_listener/tx_listener.js" />
+        <option value="$PROJECT_DIR$/docker-compose.yml" />
       </list>
     </option>
   </component>
@@ -211,6 +252,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ethereumplay" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ethereumplay" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ethereumplay" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tx_listener" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -309,6 +364,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tx_listener" />
       <recent name="$PROJECT_DIR$/geth_1.4.7_vanilla" />
       <recent name="$PROJECT_DIR$/geth_1.4.9_vanilla" />
     </key>
@@ -791,12 +847,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1467890634363</updated>
-      <workItem from="1467890635907" duration="56014000" />
+      <workItem from="1467890635907" duration="60431000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56014000" />
+    <option name="totallyTimeSpent" value="60431000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-378" y="-1398" width="1507" height="996" extended-state="0" />
@@ -987,42 +1043,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tx_firer/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tx_firer/tx_firerBuild.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_and_play/rpc_startMining.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="30" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tx_firer/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1037,16 +1061,80 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/setup/geth_helper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="36" selection-end-column="47" />
+        <state relative-caret-position="255">
+          <caret line="17" column="72" selection-start-line="17" selection-start-column="72" selection-end-line="17" selection-end-column="72" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tx_firer/tx_firer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+        <state relative-caret-position="372">
+          <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tx_listener/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tx_firer/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tx_listener/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tx_firer/tx_firerBuild.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tx_listener/tx_listenerBuild.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tx_listener/tx_listener.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="15" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tx_firer/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
         </state>
       </provider>

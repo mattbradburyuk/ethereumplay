@@ -15,10 +15,13 @@ function setProvider(web3, gethHost, gethPort) {
 var addr1 = web3geth1.eth.accounts[0];
 var addr2 = web3geth2.eth.accounts[0];
 
+// web3geth1.personal.unlockAccount(web3geth1.eth.accounts[0],'mattspass');
+// web3geth2.personal.unlockAccount(web3geth2.eth.accounts[0],'mattspass');
+
 console.log('Pre tx: ');
 logBals();
 
-web3geth1.eth.sendTransaction({from:addr1, to: addr2, value: 1000});
+web3geth2.eth.sendTransaction({from:addr2, to: addr1, value: 1000});
 
 function logBals(){
 

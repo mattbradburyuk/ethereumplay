@@ -33,6 +33,10 @@ function setProvider(web3, gethHost, gethPort) {
 createAccount(web3geth1);
 createAccount(web3geth2);
 
+web3geth1.personal.unlockAccount(web3geth1.eth.accounts[0],'mattspass');
+web3geth2.personal.unlockAccount(web3geth2.eth.accounts[0],'mattspass');
+
+
 function createAccount(web3) {
     console.log('creating account with password', 'mattspass');
     var address = web3.personal.newAccount('mattspass');

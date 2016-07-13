@@ -1,4 +1,18 @@
 
+// called from setup_geth.sh
+
+
+// Does the following:
+
+// Set up jayson and web3 objects
+// creates and unlocks accounts
+// Join two nodes together
+// funds the accoutns by mining until they both have ether
+
+
+
+// command line read in for future expansion (possibly making it take the ips/ports in)
+
 const commandLineArgs = require('command-line-args');
 
 var cli = commandLineArgs([
@@ -28,7 +42,7 @@ function setProvider(web3, gethHost, gethPort) {
     web3.setProvider(new web3.providers.HttpProvider(url));
 }
 
-// Create accounts
+// Creates and unlocks accounts
 
 createAccount(web3geth1);
 createAccount(web3geth2);

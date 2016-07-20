@@ -25,10 +25,14 @@ COPY CustomGenesis.json CustomGenesis.json
 RUN ./go-ethereum/build/bin/geth init ./CustomGenesis.json
 
 EXPOSE 8545
-
+EXPOSE 8546
 EXPOSE 30303
+EXPOSE 6060
 
 ENV TERM=xterm-256color
 
-# remember to remove --nat
+
 ENTRYPOINT ["/root/go-ethereum/build/bin/geth", "--verbosity", "6", "--networkid", "12902", "--rpc", "--jitvm=false", "--rpcaddr", "0.0.0.0", "--nodiscover", "--rpcapi", "eth,net,web3,admin,miner,personal"]
+
+# remember "--wsorigins", "*" sounds dangerous
+#"--ws", "--wsport", "8546", "--wsaddr" ,"localhost","--wsapi", "eth,net,web3", "--wsorigins", "*",

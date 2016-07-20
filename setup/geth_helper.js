@@ -14,7 +14,7 @@
 
 // Warning ------ massive hack ------
 // joining two nodes together requires geth_1 to have ip 127.21.0.2,
-// this is acheived by adding dependencies into the docker-compose.yml
+// this is acheived by adding dependencies into the docker-compose.2nodes.yml
 // this is very dodgy as can't guarantee that docker will assign this ip
 
 
@@ -109,8 +109,6 @@ function checkPeers(){
 
 
 
-
-
 // Fund accounts
 
 startBothMining()
@@ -137,8 +135,7 @@ function stopBothMining(){
 
 function checkBalancesNonZero() {
     if (hasEther(web3geth1) && hasEther(web3geth2)) {
-        console.log('oooh, both balances now non-zero...');
-        console.log('stopping ing mining in 5s so that it has some ether...');
+        console.log('both balances now non-zero... stopping mining in 5 seconds');
         setTimeout(stopBothMining, 5000);
         clearInterval(balanceCheckerTimer);
     } else {

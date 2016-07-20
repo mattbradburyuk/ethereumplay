@@ -5,7 +5,8 @@
   "dependencies": {
     "command-line-args": "^2.1.6",
     "jayson": "^2.0.0",
-    "web3": "^0.15.2"
+    "web3": "^0.15.2",
+    "ws": "^1.1.0"
   }
 
 }

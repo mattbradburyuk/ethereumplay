@@ -1,340 +1,151 @@
-Pulling repository docker.io/ethereumplay/tx_listener
-Attaching to ethereumplay_geth_1_1, ethereumplay_geth_2_1, ethereumplay_tx_firer_1
-[36mgeth_1_1       |[0m I0713 15:49:37.065491 ethdb/database.go:82] Alloted 128MB cache and 1024 file handles to /root/.ethereum/chaindata
-[36mgeth_1_1       |[0m I0713 15:49:37.079266 ethdb/database.go:169] closed db:/root/.ethereum/chaindata
-[36mgeth_1_1       |[0m E0713 15:49:37.079477 accounts/addrcache.go:205] can't load keys: open /root/.ethereum/keystore: no such file or directory
-[36mgeth_1_1       |[0m I0713 15:49:37.079501 accounts/addrcache.go:215] reloaded keys, cache has 0 accounts
-[36mgeth_1_1       |[0m I0713 15:49:37.079508 cmd/utils/flags.go:601] WARNING: No etherbase set and no accounts found as default
-[33mgeth_2_1       |[0m I0713 15:49:37.422247 cmd/utils/flags.go:687] You're one of the lucky few that will try out the JIT VM (random). If you get a consensus failure please be so kind to report this incident with the block hash that failed. You can switch to the regular VM by setting --jitvm=false
-[33mgeth_2_1       |[0m I0713 15:49:37.422384 ethdb/database.go:82] Alloted 128MB cache and 1024 file handles to /root/.ethereum/chaindata
-[32mtx_firer_1     |[0m **************tx_firer launched *******************
-[36mgeth_1_1       |[0m I0713 15:49:37.080330 ethdb/database.go:82] Alloted 128MB cache and 1024 file handles to /root/.ethereum/chaindata
-[33mgeth_2_1       |[0m I0713 15:49:37.431277 ethdb/database.go:169] closed db:/root/.ethereum/chaindata
-[33mgeth_2_1       |[0m E0713 15:49:37.431414 accounts/addrcache.go:205] can't load keys: open /root/.ethereum/keystore: no such file or directory
-[33mgeth_2_1       |[0m I0713 15:49:37.431427 accounts/addrcache.go:215] reloaded keys, cache has 0 accounts
-[33mgeth_2_1       |[0m I0713 15:49:37.431434 cmd/utils/flags.go:601] WARNING: No etherbase set and no accounts found as default
-[36mgeth_1_1       |[0m I0713 15:49:37.093738 accounts/watch.go:70] can't watch /root/.ethereum/keystore: lstat /root/.ethereum/keystore: no such file or directory
-[36mgeth_1_1       |[0m I0713 15:49:37.093949 eth/backend.go:619] upgrading db log bloom bins
-[32mtx_firer_1     |[0m web3 connect to: http://geth_1:8545
-[36mgeth_1_1       |[0m I0713 15:49:37.094304 eth/backend.go:627] upgrade completed in 352.549µs
-[33mgeth_2_1       |[0m I0713 15:49:37.432191 ethdb/database.go:82] Alloted 128MB cache and 1024 file handles to /root/.ethereum/chaindata
-[36mgeth_1_1       |[0m I0713 15:49:37.094378 ethdb/database.go:82] Alloted 16MB cache and 16 file handles to /root/.ethereum/dapp
-[33mgeth_2_1       |[0m I0713 15:49:37.447043 accounts/watch.go:70] can't watch /root/.ethereum/keystore: lstat /root/.ethereum/keystore: no such file or directory
-[32mtx_firer_1     |[0m web3 connect to: http://geth_2:8545
-[36mgeth_1_1       |[0m I0713 15:49:37.099407 eth/backend.go:172] Protocol Versions: [63 62 61], Network Id: 12902
-[36mgeth_1_1       |[0m I0713 15:49:37.099476 eth/backend.go:201] Blockchain DB Version: 3
-[33mgeth_2_1       |[0m I0713 15:49:37.456323 eth/backend.go:619] upgrading db log bloom bins
-[33mgeth_2_1       |[0m I0713 15:49:37.456600 eth/backend.go:627] upgrade completed in 362.195µs
-[36mgeth_1_1       |[0m I0713 15:49:37.099760 core/blockchain.go:206] Last header: #0 [38439bfe…] TD=1048576
-[36mgeth_1_1       |[0m I0713 15:49:37.099788 core/blockchain.go:207] Last block: #0 [38439bfe…] TD=1048576
-[36mgeth_1_1       |[0m I0713 15:49:37.099797 core/blockchain.go:208] Fast block: #0 [38439bfe…] TD=1048576
-[33mgeth_2_1       |[0m I0713 15:49:37.457505 ethdb/database.go:82] Alloted 16MB cache and 16 file handles to /root/.ethereum/dapp
-[36mgeth_1_1       |[0m I0713 15:49:37.101307 p2p/server.go:313] Starting Server
-[33mgeth_2_1       |[0m I0713 15:49:37.480384 eth/backend.go:172] Protocol Versions: [63 62 61], Network Id: 12902
-[36mgeth_1_1       |[0m I0713 15:49:37.101508 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
-[33mgeth_2_1       |[0m I0713 15:49:37.481832 eth/backend.go:201] Blockchain DB Version: 3
-[36mgeth_1_1       |[0m I0713 15:49:37.102530 p2p/server.go:556] Listening on [::]:30303
-[33mgeth_2_1       |[0m I0713 15:49:37.482799 core/blockchain.go:206] Last header: #0 [38439bfe…] TD=1048576
-[36mgeth_1_1       |[0m I0713 15:49:37.103753 release/release.go:116] Release oracle not found at fa7b9770ca4cb04296cac84f37736d4041251cdf
-[33mgeth_2_1       |[0m I0713 15:49:37.483195 core/blockchain.go:207] Last block: #0 [38439bfe…] TD=1048576
-[36mgeth_1_1       |[0m I0713 15:49:37.104166 node/node.go:259] InProc registered *node.PrivateAdminAPI under 'admin'
-[33mgeth_2_1       |[0m I0713 15:49:37.483545 core/blockchain.go:208] Fast block: #0 [38439bfe…] TD=1048576
-[36mgeth_1_1       |[0m I0713 15:49:37.104808 node/node.go:259] InProc registered *node.PublicAdminAPI under 'admin'
-[33mgeth_2_1       |[0m I0713 15:49:37.484926 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
-[33mgeth_2_1       |[0m I0713 15:49:37.485866 p2p/server.go:313] Starting Server
-[36mgeth_1_1       |[0m I0713 15:49:37.106146 node/node.go:259] InProc registered *debug.HandlerT under 'debug'
-[36mgeth_1_1       |[0m I0713 15:49:37.106188 node/node.go:259] InProc registered *node.PublicDebugAPI under 'debug'
-[33mgeth_2_1       |[0m I0713 15:49:37.486654 node/node.go:259] InProc registered *node.PrivateAdminAPI under 'admin'
-[36mgeth_1_1       |[0m I0713 15:49:37.106196 node/node.go:259] InProc registered *node.PublicWeb3API under 'web3'
-[36mgeth_1_1       |[0m I0713 15:49:37.106210 node/node.go:259] InProc registered *eth.PublicEthereumAPI under 'eth'
-[36mgeth_1_1       |[0m I0713 15:49:37.106217 node/node.go:259] InProc registered *eth.PublicAccountAPI under 'eth'
-[36mgeth_1_1       |[0m I0713 15:49:37.106272 node/node.go:259] InProc registered *eth.PrivateAccountAPI under 'personal'
-[36mgeth_1_1       |[0m I0713 15:49:37.106307 node/node.go:259] InProc registered *eth.PublicBlockChainAPI under 'eth'
-[33mgeth_2_1       |[0m I0713 15:49:37.487249 node/node.go:259] InProc registered *node.PublicAdminAPI under 'admin'
-[36mgeth_1_1       |[0m I0713 15:49:37.108270 node/node.go:259] InProc registered *eth.PublicTransactionPoolAPI under 'eth'
-[33mgeth_2_1       |[0m I0713 15:49:37.487961 node/node.go:259] InProc registered *debug.HandlerT under 'debug'
-[36mgeth_1_1       |[0m I0713 15:49:37.108322 node/node.go:259] InProc registered *eth.PublicMinerAPI under 'eth'
-[33mgeth_2_1       |[0m I0713 15:49:37.488714 node/node.go:259] InProc registered *node.PublicDebugAPI under 'debug'
-[36mgeth_1_1       |[0m I0713 15:49:37.108333 node/node.go:259] InProc registered *downloader.PublicDownloaderAPI under 'eth'
-[36mgeth_1_1       |[0m I0713 15:49:37.108386 node/node.go:259] InProc registered *eth.PrivateMinerAPI under 'miner'
-[33mgeth_2_1       |[0m I0713 15:49:37.489354 node/node.go:259] InProc registered *node.PublicWeb3API under 'web3'
-[36mgeth_1_1       |[0m I0713 15:49:37.108423 node/node.go:259] InProc registered *eth.PublicTxPoolAPI under 'txpool'
-[36mgeth_1_1       |[0m I0713 15:49:37.108477 node/node.go:259] InProc registered *filters.PublicFilterAPI under 'eth'
-[33mgeth_2_1       |[0m I0713 15:49:37.489683 node/node.go:259] InProc registered *eth.PublicEthereumAPI under 'eth'
-[36mgeth_1_1       |[0m I0713 15:49:37.108489 node/node.go:259] InProc registered *eth.PrivateAdminAPI under 'admin'
-[36mgeth_1_1       |[0m I0713 15:49:37.108500 node/node.go:259] InProc registered *eth.PublicDebugAPI under 'debug'
-[36mgeth_1_1       |[0m I0713 15:49:37.108533 node/node.go:259] InProc registered *eth.PrivateDebugAPI under 'debug'
-[36mgeth_1_1       |[0m I0713 15:49:37.108551 node/node.go:259] InProc registered *eth.PublicNetAPI under 'net'
-[33mgeth_2_1       |[0m I0713 15:49:37.491670 node/node.go:259] InProc registered *eth.PublicAccountAPI under 'eth'
-[36mgeth_1_1       |[0m I0713 15:49:37.108567 node/node.go:259] InProc registered *ethreg.PrivateRegistarAPI under 'admin'
-[36mgeth_1_1       |[0m I0713 15:49:37.108596 node/node.go:285] IPC registered *node.PrivateAdminAPI under 'admin'
-[36mgeth_1_1       |[0m I0713 15:49:37.108615 node/node.go:285] IPC registered *node.PublicAdminAPI under 'admin'
-[36mgeth_1_1       |[0m I0713 15:49:37.108638 node/node.go:285] IPC registered *debug.HandlerT under 'debug'
-[36mgeth_1_1       |[0m I0713 15:49:37.108653 node/node.go:285] IPC registered *node.PublicDebugAPI under 'debug'
-[36mgeth_1_1       |[0m I0713 15:49:37.108659 node/node.go:285] IPC registered *node.PublicWeb3API under 'web3'
-[36mgeth_1_1       |[0m I0713 15:49:37.108673 node/node.go:285] IPC registered *eth.PublicEthereumAPI under 'eth'
-[36mgeth_1_1       |[0m I0713 15:49:37.108688 node/node.go:285] IPC registered *eth.PublicAccountAPI under 'eth'
-[33mgeth_2_1       |[0m I0713 15:49:37.493152 node/node.go:259] InProc registered *eth.PrivateAccountAPI under 'personal'
-[32mtx_firer_1     |[0m Server running at http://127.0.0.1:8081/
-[36mgeth_1_1       |[0m I0713 15:49:37.108700 node/node.go:285] IPC registered *eth.PrivateAccountAPI under 'personal'
-[33mgeth_2_1       |[0m I0713 15:49:37.494891 node/node.go:259] InProc registered *eth.PublicBlockChainAPI under 'eth'
-[36mgeth_1_1       |[0m I0713 15:49:37.108745 node/node.go:285] IPC registered *eth.PublicBlockChainAPI under 'eth'
-[36mgeth_1_1       |[0m I0713 15:49:37.108790 node/node.go:285] IPC registered *eth.PublicTransactionPoolAPI under 'eth'
-[33mgeth_2_1       |[0m I0713 15:49:37.496372 node/node.go:259] InProc registered *eth.PublicTransactionPoolAPI under 'eth'
-[36mgeth_1_1       |[0m I0713 15:49:37.108809 node/node.go:285] IPC registered *eth.PublicMinerAPI under 'eth'
-[36mgeth_1_1       |[0m I0713 15:49:37.108814 node/node.go:285] IPC registered *downloader.PublicDownloaderAPI under 'eth'
-[33mgeth_2_1       |[0m I0713 15:49:37.498431 node/node.go:259] InProc registered *eth.PublicMinerAPI under 'eth'
-[36mgeth_1_1       |[0m I0713 15:49:37.108823 node/node.go:285] IPC registered *eth.PrivateMinerAPI under 'miner'
-[33mgeth_2_1       |[0m I0713 15:49:37.499211 node/node.go:259] InProc registered *downloader.PublicDownloaderAPI under 'eth'
-[36mgeth_1_1       |[0m I0713 15:49:37.108838 node/node.go:285] IPC registered *eth.PublicTxPoolAPI under 'txpool'
-[33mgeth_2_1       |[0m I0713 15:49:37.499552 node/node.go:259] InProc registered *eth.PrivateMinerAPI under 'miner'
-[36mgeth_1_1       |[0m I0713 15:49:37.108856 node/node.go:285] IPC registered *filters.PublicFilterAPI under 'eth'
-[36mgeth_1_1       |[0m I0713 15:49:37.108873 node/node.go:285] IPC registered *eth.PrivateAdminAPI under 'admin'
-[36mgeth_1_1       |[0m I0713 15:49:37.108882 node/node.go:285] IPC registered *eth.PublicDebugAPI under 'debug'
-[36mgeth_1_1       |[0m I0713 15:49:37.108899 node/node.go:285] IPC registered *eth.PrivateDebugAPI under 'debug'
-[36mgeth_1_1       |[0m I0713 15:49:37.108924 node/node.go:285] IPC registered *eth.PublicNetAPI under 'net'
-[36mgeth_1_1       |[0m I0713 15:49:37.108936 node/node.go:285] IPC registered *ethreg.PrivateRegistarAPI under 'admin'
-[36mgeth_1_1       |[0m I0713 15:49:37.109089 node/node.go:354] HTTP registered *node.PrivateAdminAPI under 'admin'
-[36mgeth_1_1       |[0m I0713 15:49:37.109113 node/node.go:354] HTTP registered *node.PublicAdminAPI under 'admin'
-[33mgeth_2_1       |[0m I0713 15:49:37.499766 node/node.go:259] InProc registered *eth.PublicTxPoolAPI under 'txpool'
-[36mgeth_1_1       |[0m I0713 15:49:37.109119 node/node.go:354] HTTP registered *node.PublicWeb3API under 'web3'
-[33mgeth_2_1       |[0m I0713 15:49:37.500179 node/node.go:259] InProc registered *filters.PublicFilterAPI under 'eth'
-[36mgeth_1_1       |[0m I0713 15:49:37.109129 node/node.go:354] HTTP registered *eth.PublicEthereumAPI under 'eth'
-[33mgeth_2_1       |[0m I0713 15:49:37.500722 node/node.go:259] InProc registered *eth.PrivateAdminAPI under 'admin'
-[36mgeth_1_1       |[0m I0713 15:49:37.109144 node/node.go:354] HTTP registered *eth.PublicAccountAPI under 'eth'
-[33mgeth_2_1       |[0m I0713 15:49:37.500770 node/node.go:259] InProc registered *eth.PublicDebugAPI under 'debug'
-[36mgeth_1_1       |[0m I0713 15:49:37.109154 node/node.go:354] HTTP registered *eth.PrivateAccountAPI under 'personal'
-[33mgeth_2_1       |[0m I0713 15:49:37.501108 node/node.go:259] InProc registered *eth.PrivateDebugAPI under 'debug'
-[36mgeth_1_1       |[0m I0713 15:49:37.109191 node/node.go:354] HTTP registered *eth.PublicBlockChainAPI under 'eth'
-[36mgeth_1_1       |[0m I0713 15:49:37.109232 node/node.go:354] HTTP registered *eth.PublicTransactionPoolAPI under 'eth'
-[36mgeth_1_1       |[0m I0713 15:49:37.109250 node/node.go:354] HTTP registered *eth.PublicMinerAPI under 'eth'
-[36mgeth_1_1       |[0m I0713 15:49:37.109255 node/node.go:354] HTTP registered *downloader.PublicDownloaderAPI under 'eth'
-[36mgeth_1_1       |[0m I0713 15:49:37.109264 node/node.go:354] HTTP registered *eth.PrivateMinerAPI under 'miner'
-[36mgeth_1_1       |[0m I0713 15:49:37.109290 node/node.go:354] HTTP registered *filters.PublicFilterAPI under 'eth'
-[36mgeth_1_1       |[0m I0713 15:49:37.109307 node/node.go:354] HTTP registered *eth.PrivateAdminAPI under 'admin'
-[36mgeth_1_1       |[0m I0713 15:49:37.109312 node/node.go:354] HTTP registered *eth.PublicNetAPI under 'net'
-[36mgeth_1_1       |[0m I0713 15:49:37.109326 node/node.go:354] HTTP registered *ethreg.PrivateRegistarAPI under 'admin'
-[36mgeth_1_1       |[0m I0713 15:49:37.109372 node/node.go:366] HTTP endpoint opened: http://0.0.0.0:8545
-[33mgeth_2_1       |[0m I0713 15:49:37.487114 p2p/server.go:556] Listening on [::]:30303
-[36mgeth_1_1       |[0m I0713 15:49:37.109695 node/node.go:296] IPC endpoint opened: /root/.ethereum/geth.ipc
-[33mgeth_2_1       |[0m I0713 15:49:37.487735 release/release.go:116] Release oracle not found at fa7b9770ca4cb04296cac84f37736d4041251cdf
-[33mgeth_2_1       |[0m I0713 15:49:37.501765 node/node.go:259] InProc registered *eth.PublicNetAPI under 'net'
-[33mgeth_2_1       |[0m I0713 15:49:37.502099 node/node.go:259] InProc registered *ethreg.PrivateRegistarAPI under 'admin'
-[33mgeth_2_1       |[0m I0713 15:49:37.502244 node/node.go:285] IPC registered *node.PrivateAdminAPI under 'admin'
-[33mgeth_2_1       |[0m I0713 15:49:37.502307 node/node.go:285] IPC registered *node.PublicAdminAPI under 'admin'
-[33mgeth_2_1       |[0m I0713 15:49:37.502411 node/node.go:285] IPC registered *debug.HandlerT under 'debug'
-[33mgeth_2_1       |[0m I0713 15:49:37.502422 node/node.go:285] IPC registered *node.PublicDebugAPI under 'debug'
-[33mgeth_2_1       |[0m I0713 15:49:37.502428 node/node.go:285] IPC registered *node.PublicWeb3API under 'web3'
-[33mgeth_2_1       |[0m I0713 15:49:37.502540 node/node.go:285] IPC registered *eth.PublicEthereumAPI under 'eth'
-[33mgeth_2_1       |[0m I0713 15:49:37.502563 node/node.go:285] IPC registered *eth.PublicAccountAPI under 'eth'
-[33mgeth_2_1       |[0m I0713 15:49:37.502576 node/node.go:285] IPC registered *eth.PrivateAccountAPI under 'personal'
-[33mgeth_2_1       |[0m I0713 15:49:37.502647 node/node.go:285] IPC registered *eth.PublicBlockChainAPI under 'eth'
-[33mgeth_2_1       |[0m I0713 15:49:37.502774 node/node.go:285] IPC registered *eth.PublicTransactionPoolAPI under 'eth'
-[33mgeth_2_1       |[0m I0713 15:49:37.502798 node/node.go:285] IPC registered *eth.PublicMinerAPI under 'eth'
-[33mgeth_2_1       |[0m I0713 15:49:37.502803 node/node.go:285] IPC registered *downloader.PublicDownloaderAPI under 'eth'
-[33mgeth_2_1       |[0m I0713 15:49:37.502813 node/node.go:285] IPC registered *eth.PrivateMinerAPI under 'miner'
-[33mgeth_2_1       |[0m I0713 15:49:37.502831 node/node.go:285] IPC registered *eth.PublicTxPoolAPI under 'txpool'
-[33mgeth_2_1       |[0m I0713 15:49:37.502932 node/node.go:285] IPC registered *filters.PublicFilterAPI under 'eth'
-[33mgeth_2_1       |[0m I0713 15:49:37.502980 node/node.go:285] IPC registered *eth.PrivateAdminAPI under 'admin'
-[33mgeth_2_1       |[0m I0713 15:49:37.503067 node/node.go:285] IPC registered *eth.PublicDebugAPI under 'debug'
-[33mgeth_2_1       |[0m I0713 15:49:37.503099 node/node.go:285] IPC registered *eth.PrivateDebugAPI under 'debug'
-[33mgeth_2_1       |[0m I0713 15:49:37.503183 node/node.go:285] IPC registered *eth.PublicNetAPI under 'net'
-[33mgeth_2_1       |[0m I0713 15:49:37.503285 node/node.go:285] IPC registered *ethreg.PrivateRegistarAPI under 'admin'
-[33mgeth_2_1       |[0m I0713 15:49:37.503442 node/node.go:354] HTTP registered *node.PrivateAdminAPI under 'admin'
-[33mgeth_2_1       |[0m I0713 15:49:37.503536 node/node.go:354] HTTP registered *node.PublicAdminAPI under 'admin'
-[33mgeth_2_1       |[0m I0713 15:49:37.503544 node/node.go:354] HTTP registered *node.PublicWeb3API under 'web3'
-[33mgeth_2_1       |[0m I0713 15:49:37.503555 node/node.go:354] HTTP registered *eth.PublicEthereumAPI under 'eth'
-[33mgeth_2_1       |[0m I0713 15:49:37.503564 node/node.go:354] HTTP registered *eth.PublicAccountAPI under 'eth'
-[33mgeth_2_1       |[0m I0713 15:49:37.503575 node/node.go:354] HTTP registered *eth.PrivateAccountAPI under 'personal'
-[33mgeth_2_1       |[0m I0713 15:49:37.503716 node/node.go:354] HTTP registered *eth.PublicBlockChainAPI under 'eth'
-[33mgeth_2_1       |[0m I0713 15:49:37.503810 node/node.go:354] HTTP registered *eth.PublicTransactionPoolAPI under 'eth'
-[33mgeth_2_1       |[0m I0713 15:49:37.503820 node/node.go:354] HTTP registered *eth.PublicMinerAPI under 'eth'
-[33mgeth_2_1       |[0m I0713 15:49:37.503884 node/node.go:354] HTTP registered *downloader.PublicDownloaderAPI under 'eth'
-[33mgeth_2_1       |[0m I0713 15:49:37.503942 node/node.go:354] HTTP registered *eth.PrivateMinerAPI under 'miner'
-[33mgeth_2_1       |[0m I0713 15:49:37.503964 node/node.go:354] HTTP registered *filters.PublicFilterAPI under 'eth'
-[33mgeth_2_1       |[0m I0713 15:49:37.503972 node/node.go:354] HTTP registered *eth.PrivateAdminAPI under 'admin'
-[33mgeth_2_1       |[0m I0713 15:49:37.503977 node/node.go:354] HTTP registered *eth.PublicNetAPI under 'net'
-[33mgeth_2_1       |[0m I0713 15:49:37.503991 node/node.go:354] HTTP registered *ethreg.PrivateRegistarAPI under 'admin'
-[33mgeth_2_1       |[0m I0713 15:49:37.504040 node/node.go:296] IPC endpoint opened: /root/.ethereum/geth.ipc
-[33mgeth_2_1       |[0m I0713 15:49:37.504158 node/node.go:366] HTTP endpoint opened: http://0.0.0.0:8545
-[36mgeth_1_1       |[0m I0713 15:49:39.169556 p2p/nat/nat.go:109] network port tcp:30303 could not be mapped: no UPnP or NAT-PMP router discovered
-[33mgeth_2_1       |[0m I0713 15:49:39.524522 p2p/nat/nat.go:109] network port tcp:30303 could not be mapped: no UPnP or NAT-PMP router discovered
-[36mgeth_1_1       |[0m I0713 15:49:57.105449 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
-[33mgeth_2_1       |[0m I0713 15:49:57.490338 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
-[32methereumplay_tx_firer_1 exited with code 137
-[0m[33methereumplay_geth_2_1 exited with code 2
-[0m[36methereumplay_geth_1_1 exited with code 2
-[0mAttaching to ethereumplay_geth_1_1, ethereumplay_geth_2_1, ethereumplay_tx_firer_1, ethereumplay_tx_listener_1
-[36mgeth_1_1       |[0m I0713 15:50:12.222161 ethdb/database.go:82] Alloted 128MB cache and 1024 file handles to /root/.ethereum/chaindata
-[33mgeth_2_1       |[0m I0713 15:50:12.596809 ethdb/database.go:82] Alloted 128MB cache and 1024 file handles to /root/.ethereum/chaindata
-[36mgeth_1_1       |[0m I0713 15:50:12.237015 ethdb/database.go:169] closed db:/root/.ethereum/chaindata
-[32mtx_firer_1     |[0m **************tx_firer launched *******************
-[33mgeth_2_1       |[0m I0713 15:50:12.608363 ethdb/database.go:169] closed db:/root/.ethereum/chaindata
-[36mgeth_1_1       |[0m E0713 15:50:12.237189 accounts/addrcache.go:205] can't load keys: open /root/.ethereum/keystore: no such file or directory
-[33mgeth_2_1       |[0m E0713 15:50:12.608473 accounts/addrcache.go:205] can't load keys: open /root/.ethereum/keystore: no such file or directory
-[32mtx_firer_1     |[0m web3 connect to: http://geth_1:8545
-[33mgeth_2_1       |[0m I0713 15:50:12.608486 accounts/addrcache.go:215] reloaded keys, cache has 0 accounts
-[32mtx_firer_1     |[0m web3 connect to: http://geth_2:8545
-[33mgeth_2_1       |[0m I0713 15:50:12.608493 cmd/utils/flags.go:601] WARNING: No etherbase set and no accounts found as default
-[36mgeth_1_1       |[0m I0713 15:50:12.237558 accounts/addrcache.go:215] reloaded keys, cache has 0 accounts
-[33mgeth_2_1       |[0m I0713 15:50:12.608778 ethdb/database.go:82] Alloted 128MB cache and 1024 file handles to /root/.ethereum/chaindata
-[36mgeth_1_1       |[0m I0713 15:50:12.237608 cmd/utils/flags.go:601] WARNING: No etherbase set and no accounts found as default
-[32mtx_firer_1     |[0m Server running at http://127.0.0.1:8081/
-[33mgeth_2_1       |[0m I0713 15:50:12.635495 eth/backend.go:619] upgrading db log bloom bins
-[33mgeth_2_1       |[0m I0713 15:50:12.635686 eth/backend.go:627] upgrade completed in 194.75µs
-[36mgeth_1_1       |[0m I0713 15:50:12.237550 accounts/watch.go:70] can't watch /root/.ethereum/keystore: lstat /root/.ethereum/keystore: no such file or directory
-[33mgeth_2_1       |[0m I0713 15:50:12.635732 ethdb/database.go:82] Alloted 16MB cache and 16 file handles to /root/.ethereum/dapp
-[36mgeth_1_1       |[0m I0713 15:50:12.238331 ethdb/database.go:82] Alloted 128MB cache and 1024 file handles to /root/.ethereum/chaindata
-[36mgeth_1_1       |[0m I0713 15:50:12.253254 eth/backend.go:619] upgrading db log bloom bins
-[33mgeth_2_1       |[0m I0713 15:50:12.638670 accounts/watch.go:70] can't watch /root/.ethereum/keystore: lstat /root/.ethereum/keystore: no such file or directory
-[36mgeth_1_1       |[0m I0713 15:50:12.253595 eth/backend.go:627] upgrade completed in 334.127µs
-[33mgeth_2_1       |[0m I0713 15:50:12.641969 eth/backend.go:172] Protocol Versions: [63 62 61], Network Id: 12902
-[33mgeth_2_1       |[0m I0713 15:50:12.642111 eth/backend.go:201] Blockchain DB Version: 3
-[36mgeth_1_1       |[0m I0713 15:50:12.253795 ethdb/database.go:82] Alloted 16MB cache and 16 file handles to /root/.ethereum/dapp
-[33mgeth_2_1       |[0m I0713 15:50:12.642444 core/blockchain.go:206] Last header: #0 [38439bfe…] TD=1048576
-[33mgeth_2_1       |[0m I0713 15:50:12.642478 core/blockchain.go:207] Last block: #0 [38439bfe…] TD=1048576
-[33mgeth_2_1       |[0m I0713 15:50:12.642489 core/blockchain.go:208] Fast block: #0 [38439bfe…] TD=1048576
-[33mgeth_2_1       |[0m I0713 15:50:12.643094 p2p/server.go:313] Starting Server
-[33mgeth_2_1       |[0m I0713 15:50:12.643241 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
-[36mgeth_1_1       |[0m I0713 15:50:12.257854 eth/backend.go:172] Protocol Versions: [63 62 61], Network Id: 12902
-[33mgeth_2_1       |[0m I0713 15:50:12.643449 p2p/server.go:556] Listening on [::]:30303
-[33mgeth_2_1       |[0m I0713 15:50:12.643526 node/node.go:259] InProc registered *node.PrivateAdminAPI under 'admin'
-[36mgeth_1_1       |[0m I0713 15:50:12.258067 eth/backend.go:201] Blockchain DB Version: 3
-[33mgeth_2_1       |[0m I0713 15:50:12.643659 node/node.go:259] InProc registered *node.PublicAdminAPI under 'admin'
-[33mgeth_2_1       |[0m I0713 15:50:12.643780 node/node.go:259] InProc registered *debug.HandlerT under 'debug'
-[33mgeth_2_1       |[0m I0713 15:50:12.643866 node/node.go:259] InProc registered *node.PublicDebugAPI under 'debug'
-[33mgeth_2_1       |[0m I0713 15:50:12.643875 node/node.go:259] InProc registered *node.PublicWeb3API under 'web3'
-[36mgeth_1_1       |[0m I0713 15:50:12.259086 core/blockchain.go:206] Last header: #0 [38439bfe…] TD=1048576
-[33mgeth_2_1       |[0m I0713 15:50:12.643904 node/node.go:259] InProc registered *eth.PublicEthereumAPI under 'eth'
-[36mgeth_1_1       |[0m I0713 15:50:12.259125 core/blockchain.go:207] Last block: #0 [38439bfe…] TD=1048576
-[33mgeth_2_1       |[0m I0713 15:50:12.643911 node/node.go:259] InProc registered *eth.PublicAccountAPI under 'eth'
-[33mgeth_2_1       |[0m I0713 15:50:12.643934 node/node.go:259] InProc registered *eth.PrivateAccountAPI under 'personal'
-[36mgeth_1_1       |[0m I0713 15:50:12.259135 core/blockchain.go:208] Fast block: #0 [38439bfe…] TD=1048576
-[33mgeth_2_1       |[0m I0713 15:50:12.644010 release/release.go:116] Release oracle not found at fa7b9770ca4cb04296cac84f37736d4041251cdf
-[33mgeth_2_1       |[0m I0713 15:50:12.644014 node/node.go:259] InProc registered *eth.PublicBlockChainAPI under 'eth'
-[33mgeth_2_1       |[0m I0713 15:50:12.644093 node/node.go:259] InProc registered *eth.PublicTransactionPoolAPI under 'eth'
-[33mgeth_2_1       |[0m I0713 15:50:12.644111 node/node.go:259] InProc registered *eth.PublicMinerAPI under 'eth'
-[36mgeth_1_1       |[0m E0713 15:50:12.259713 accounts/addrcache.go:205] can't load keys: open /root/.ethereum/keystore: no such file or directory
-[33mgeth_2_1       |[0m I0713 15:50:12.644122 node/node.go:259] InProc registered *downloader.PublicDownloaderAPI under 'eth'
-[36mgeth_1_1       |[0m I0713 15:50:12.259756 accounts/addrcache.go:215] reloaded keys, cache has 0 accounts
-[33mgeth_2_1       |[0m I0713 15:50:12.644139 node/node.go:259] InProc registered *eth.PrivateMinerAPI under 'miner'
-[33mgeth_2_1       |[0m I0713 15:50:12.644151 node/node.go:259] InProc registered *eth.PublicTxPoolAPI under 'txpool'
-[36mgeth_1_1       |[0m I0713 15:50:12.260378 p2p/server.go:313] Starting Server
-[33mgeth_2_1       |[0m I0713 15:50:12.644181 node/node.go:259] InProc registered *filters.PublicFilterAPI under 'eth'
-[33mgeth_2_1       |[0m I0713 15:50:12.644197 node/node.go:259] InProc registered *eth.PrivateAdminAPI under 'admin'
-[33mgeth_2_1       |[0m I0713 15:50:12.644212 node/node.go:259] InProc registered *eth.PublicDebugAPI under 'debug'
-[33mgeth_2_1       |[0m I0713 15:50:12.644237 node/node.go:259] InProc registered *eth.PrivateDebugAPI under 'debug'
-[36mgeth_1_1       |[0m I0713 15:50:12.260629 node/node.go:259] InProc registered *node.PrivateAdminAPI under 'admin'
-[33mgeth_2_1       |[0m I0713 15:50:12.644250 node/node.go:259] InProc registered *eth.PublicNetAPI under 'net'
-[36mgeth_1_1       |[0m I0713 15:50:12.261043 node/node.go:259] InProc registered *node.PublicAdminAPI under 'admin'
-[33mgeth_2_1       |[0m I0713 15:50:12.644447 node/node.go:259] InProc registered *ethreg.PrivateRegistarAPI under 'admin'
-[36mgeth_1_1       |[0m I0713 15:50:12.261082 node/node.go:259] InProc registered *debug.HandlerT under 'debug'
-[36mgeth_1_1       |[0m I0713 15:50:12.261090 node/node.go:259] InProc registered *node.PublicDebugAPI under 'debug'
-[36mgeth_1_1       |[0m I0713 15:50:12.261100 node/node.go:259] InProc registered *node.PublicWeb3API under 'web3'
-[33mgeth_2_1       |[0m I0713 15:50:12.644642 node/node.go:285] IPC registered *node.PrivateAdminAPI under 'admin'
-[36mgeth_1_1       |[0m I0713 15:50:12.261122 node/node.go:259] InProc registered *eth.PublicEthereumAPI under 'eth'
-[33mgeth_2_1       |[0m I0713 15:50:12.644662 node/node.go:285] IPC registered *node.PublicAdminAPI under 'admin'
-[36mgeth_1_1       |[0m I0713 15:50:12.261130 node/node.go:259] InProc registered *eth.PublicAccountAPI under 'eth'
-[36mgeth_1_1       |[0m I0713 15:50:12.261144 node/node.go:259] InProc registered *eth.PrivateAccountAPI under 'personal'
-[33mgeth_2_1       |[0m I0713 15:50:12.644910 node/node.go:285] IPC registered *debug.HandlerT under 'debug'
-[33mgeth_2_1       |[0m I0713 15:50:12.644929 node/node.go:285] IPC registered *node.PublicDebugAPI under 'debug'
-[33mgeth_2_1       |[0m I0713 15:50:12.645223 node/node.go:285] IPC registered *node.PublicWeb3API under 'web3'
-[36mgeth_1_1       |[0m I0713 15:50:12.261291 node/node.go:259] InProc registered *eth.PublicBlockChainAPI under 'eth'
-[36mgeth_1_1       |[0m I0713 15:50:12.261375 node/node.go:259] InProc registered *eth.PublicTransactionPoolAPI under 'eth'
-[36mgeth_1_1       |[0m I0713 15:50:12.261388 node/node.go:259] InProc registered *eth.PublicMinerAPI under 'eth'
-[33mgeth_2_1       |[0m I0713 15:50:12.645324 node/node.go:285] IPC registered *eth.PublicEthereumAPI under 'eth'
-[36mgeth_1_1       |[0m I0713 15:50:12.261393 node/node.go:259] InProc registered *downloader.PublicDownloaderAPI under 'eth'
-[33mgeth_2_1       |[0m I0713 15:50:12.645356 node/node.go:285] IPC registered *eth.PublicAccountAPI under 'eth'
-[36mgeth_1_1       |[0m I0713 15:50:12.261403 node/node.go:259] InProc registered *eth.PrivateMinerAPI under 'miner'
-[33mgeth_2_1       |[0m I0713 15:50:12.645604 node/node.go:285] IPC registered *eth.PrivateAccountAPI under 'personal'
-[36mgeth_1_1       |[0m I0713 15:50:12.261409 node/node.go:259] InProc registered *eth.PublicTxPoolAPI under 'txpool'
-[36mgeth_1_1       |[0m I0713 15:50:12.261428 node/node.go:259] InProc registered *filters.PublicFilterAPI under 'eth'
-[36mgeth_1_1       |[0m I0713 15:50:12.261442 node/node.go:259] InProc registered *eth.PrivateAdminAPI under 'admin'
-[33mgeth_2_1       |[0m I0713 15:50:12.646873 node/node.go:285] IPC registered *eth.PublicBlockChainAPI under 'eth'
-[36mgeth_1_1       |[0m I0713 15:50:12.261456 node/node.go:259] InProc registered *eth.PublicDebugAPI under 'debug'
-[33mgeth_2_1       |[0m I0713 15:50:12.647247 node/node.go:285] IPC registered *eth.PublicTransactionPoolAPI under 'eth'
-[36mgeth_1_1       |[0m I0713 15:50:12.261473 node/node.go:259] InProc registered *eth.PrivateDebugAPI under 'debug'
-[36mgeth_1_1       |[0m I0713 15:50:12.261479 node/node.go:259] InProc registered *eth.PublicNetAPI under 'net'
-[33mgeth_2_1       |[0m I0713 15:50:12.647274 node/node.go:285] IPC registered *eth.PublicMinerAPI under 'eth'
-[36mgeth_1_1       |[0m I0713 15:50:12.261532 node/node.go:259] InProc registered *ethreg.PrivateRegistarAPI under 'admin'
-[33mgeth_2_1       |[0m I0713 15:50:12.647293 node/node.go:285] IPC registered *downloader.PublicDownloaderAPI under 'eth'
-[36mgeth_1_1       |[0m I0713 15:50:12.261548 node/node.go:285] IPC registered *node.PrivateAdminAPI under 'admin'
-[33mgeth_2_1       |[0m I0713 15:50:12.650835 node/node.go:285] IPC registered *eth.PrivateMinerAPI under 'miner'
-[36mgeth_1_1       |[0m I0713 15:50:12.261563 node/node.go:285] IPC registered *node.PublicAdminAPI under 'admin'
-[33mgeth_2_1       |[0m I0713 15:50:12.650904 node/node.go:285] IPC registered *eth.PublicTxPoolAPI under 'txpool'
-[36mgeth_1_1       |[0m I0713 15:50:12.261583 node/node.go:285] IPC registered *debug.HandlerT under 'debug'
-[36mgeth_1_1       |[0m I0713 15:50:12.261587 node/node.go:285] IPC registered *node.PublicDebugAPI under 'debug'
-[36mgeth_1_1       |[0m I0713 15:50:12.261592 node/node.go:285] IPC registered *node.PublicWeb3API under 'web3'
-[33mgeth_2_1       |[0m I0713 15:50:12.650944 node/node.go:285] IPC registered *filters.PublicFilterAPI under 'eth'
-[33mgeth_2_1       |[0m I0713 15:50:12.650962 node/node.go:285] IPC registered *eth.PrivateAdminAPI under 'admin'
-[36mgeth_1_1       |[0m I0713 15:50:12.261642 node/node.go:285] IPC registered *eth.PublicEthereumAPI under 'eth'
-[33mgeth_2_1       |[0m I0713 15:50:12.650980 node/node.go:285] IPC registered *eth.PublicDebugAPI under 'debug'
-[36mgeth_1_1       |[0m I0713 15:50:12.261665 node/node.go:285] IPC registered *eth.PublicAccountAPI under 'eth'
-[33mgeth_2_1       |[0m I0713 15:50:12.651010 node/node.go:285] IPC registered *eth.PrivateDebugAPI under 'debug'
-[36mgeth_1_1       |[0m I0713 15:50:12.261675 node/node.go:285] IPC registered *eth.PrivateAccountAPI under 'personal'
-[33mgeth_2_1       |[0m I0713 15:50:12.651025 node/node.go:285] IPC registered *eth.PublicNetAPI under 'net'
-[33mgeth_2_1       |[0m I0713 15:50:12.651059 node/node.go:285] IPC registered *ethreg.PrivateRegistarAPI under 'admin'
-[33mgeth_2_1       |[0m I0713 15:50:12.651480 node/node.go:296] IPC endpoint opened: /root/.ethereum/geth.ipc
-[36mgeth_1_1       |[0m I0713 15:50:12.261702 node/node.go:285] IPC registered *eth.PublicBlockChainAPI under 'eth'
-[36mgeth_1_1       |[0m I0713 15:50:12.261732 node/node.go:285] IPC registered *eth.PublicTransactionPoolAPI under 'eth'
-[36mgeth_1_1       |[0m I0713 15:50:12.261740 node/node.go:285] IPC registered *eth.PublicMinerAPI under 'eth'
-[36mgeth_1_1       |[0m I0713 15:50:12.261744 node/node.go:285] IPC registered *downloader.PublicDownloaderAPI under 'eth'
-[33mgeth_2_1       |[0m I0713 15:50:12.651592 node/node.go:354] HTTP registered *node.PrivateAdminAPI under 'admin'
-[36mgeth_1_1       |[0m I0713 15:50:12.261752 node/node.go:285] IPC registered *eth.PrivateMinerAPI under 'miner'
-[33mgeth_2_1       |[0m I0713 15:50:12.651617 node/node.go:354] HTTP registered *node.PublicAdminAPI under 'admin'
-[36mgeth_1_1       |[0m I0713 15:50:12.261757 node/node.go:285] IPC registered *eth.PublicTxPoolAPI under 'txpool'
-[36mgeth_1_1       |[0m I0713 15:50:12.261772 node/node.go:285] IPC registered *filters.PublicFilterAPI under 'eth'
-[33mgeth_2_1       |[0m I0713 15:50:12.651909 node/node.go:354] HTTP registered *node.PublicWeb3API under 'web3'
-[36mgeth_1_1       |[0m I0713 15:50:12.261779 node/node.go:285] IPC registered *eth.PrivateAdminAPI under 'admin'
-[36mgeth_1_1       |[0m I0713 15:50:12.261788 node/node.go:285] IPC registered *eth.PublicDebugAPI under 'debug'
-[33mgeth_2_1       |[0m I0713 15:50:12.652961 node/node.go:354] HTTP registered *eth.PublicEthereumAPI under 'eth'
-[33mgeth_2_1       |[0m I0713 15:50:12.653017 node/node.go:354] HTTP registered *eth.PublicAccountAPI under 'eth'
-[36mgeth_1_1       |[0m I0713 15:50:12.261815 node/node.go:285] IPC registered *eth.PrivateDebugAPI under 'debug'
-[33mgeth_2_1       |[0m I0713 15:50:12.653076 node/node.go:354] HTTP registered *eth.PrivateAccountAPI under 'personal'
-[33mgeth_2_1       |[0m I0713 15:50:12.653156 node/node.go:354] HTTP registered *eth.PublicBlockChainAPI under 'eth'
-[33mgeth_2_1       |[0m I0713 15:50:12.653231 node/node.go:354] HTTP registered *eth.PublicTransactionPoolAPI under 'eth'
-[36mgeth_1_1       |[0m I0713 15:50:12.261822 node/node.go:285] IPC registered *eth.PublicNetAPI under 'net'
-[33mgeth_2_1       |[0m I0713 15:50:12.653268 node/node.go:354] HTTP registered *eth.PublicMinerAPI under 'eth'
-[36mgeth_1_1       |[0m I0713 15:50:12.261834 node/node.go:285] IPC registered *ethreg.PrivateRegistarAPI under 'admin'
-[33mgeth_2_1       |[0m I0713 15:50:12.653297 node/node.go:354] HTTP registered *downloader.PublicDownloaderAPI under 'eth'
-[33mgeth_2_1       |[0m I0713 15:50:12.653339 node/node.go:354] HTTP registered *eth.PrivateMinerAPI under 'miner'
-[33mgeth_2_1       |[0m I0713 15:50:12.653398 node/node.go:354] HTTP registered *filters.PublicFilterAPI under 'eth'
-[36mgeth_1_1       |[0m I0713 15:50:12.262088 node/node.go:354] HTTP registered *node.PrivateAdminAPI under 'admin'
-[36mgeth_1_1       |[0m I0713 15:50:12.262111 node/node.go:354] HTTP registered *node.PublicAdminAPI under 'admin'
-[33mgeth_2_1       |[0m I0713 15:50:12.653420 node/node.go:354] HTTP registered *eth.PrivateAdminAPI under 'admin'
-[36mgeth_1_1       |[0m I0713 15:50:12.262116 node/node.go:354] HTTP registered *node.PublicWeb3API under 'web3'
-[33mgeth_2_1       |[0m I0713 15:50:12.653533 node/node.go:354] HTTP registered *eth.PublicNetAPI under 'net'
-[36mgeth_1_1       |[0m I0713 15:50:12.262244 node/node.go:354] HTTP registered *eth.PublicEthereumAPI under 'eth'
-[33mgeth_2_1       |[0m I0713 15:50:12.653589 node/node.go:354] HTTP registered *ethreg.PrivateRegistarAPI under 'admin'
-[33mgeth_2_1       |[0m I0713 15:50:12.653676 node/node.go:366] HTTP endpoint opened: http://0.0.0.0:8545
-[36mgeth_1_1       |[0m I0713 15:50:12.262420 node/node.go:354] HTTP registered *eth.PublicAccountAPI under 'eth'
-[36mgeth_1_1       |[0m I0713 15:50:12.262531 node/node.go:354] HTTP registered *eth.PrivateAccountAPI under 'personal'
-[36mgeth_1_1       |[0m I0713 15:50:12.262852 node/node.go:354] HTTP registered *eth.PublicBlockChainAPI under 'eth'
-[36mgeth_1_1       |[0m I0713 15:50:12.263219 node/node.go:354] HTTP registered *eth.PublicTransactionPoolAPI under 'eth'
-[36mgeth_1_1       |[0m I0713 15:50:12.263533 node/node.go:354] HTTP registered *eth.PublicMinerAPI under 'eth'
-[36mgeth_1_1       |[0m I0713 15:50:12.263662 node/node.go:354] HTTP registered *downloader.PublicDownloaderAPI under 'eth'
-[36mgeth_1_1       |[0m I0713 15:50:12.263688 node/node.go:354] HTTP registered *eth.PrivateMinerAPI under 'miner'
-[36mgeth_1_1       |[0m I0713 15:50:12.263984 node/node.go:354] HTTP registered *filters.PublicFilterAPI under 'eth'
-[36mgeth_1_1       |[0m I0713 15:50:12.264015 node/node.go:354] HTTP registered *eth.PrivateAdminAPI under 'admin'
-[36mgeth_1_1       |[0m I0713 15:50:12.264027 node/node.go:354] HTTP registered *eth.PublicNetAPI under 'net'
-[36mgeth_1_1       |[0m I0713 15:50:12.264067 node/node.go:354] HTTP registered *ethreg.PrivateRegistarAPI under 'admin'
-[36mgeth_1_1       |[0m I0713 15:50:12.264399 node/node.go:366] HTTP endpoint opened: http://0.0.0.0:8545
-[36mgeth_1_1       |[0m I0713 15:50:12.264645 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
-[36mgeth_1_1       |[0m I0713 15:50:12.264966 accounts/watch.go:70] can't watch /root/.ethereum/keystore: lstat /root/.ethereum/keystore: no such file or directory
-[36mgeth_1_1       |[0m I0713 15:50:12.265085 p2p/server.go:556] Listening on [::]:30303
-[36mgeth_1_1       |[0m I0713 15:50:12.265458 node/node.go:296] IPC endpoint opened: /root/.ethereum/geth.ipc
-[36mgeth_1_1       |[0m I0713 15:50:12.265665 release/release.go:116] Release oracle not found at fa7b9770ca4cb04296cac84f37736d4041251cdf
-[35mtx_listener_1  |[0m tx_listener called
-[35methereumplay_tx_listener_1 exited with code 0
-[0m[36mgeth_1_1       |[0m I0713 15:50:14.324243 p2p/nat/nat.go:109] network port tcp:30303 could not be mapped: no UPnP or NAT-PMP router discovered
-[33mgeth_2_1       |[0m I0713 15:50:14.699611 p2p/nat/nat.go:109] network port tcp:30303 could not be mapped: no UPnP or NAT-PMP router discovered
-[36mgeth_1_1       |[0m I0713 15:50:32.265019 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
-[33mgeth_2_1       |[0m I0713 15:50:32.651873 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
-[36mgeth_1_1       |[0m I0713 15:50:52.265423 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
-[33mgeth_2_1       |[0m I0713 15:50:52.652576 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
-[36mgeth_1_1       |[0m I0713 15:51:12.266029 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
-[33mgeth_2_1       |[0m I0713 15:51:12.653565 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
-[36mgeth_1_1       |[0m I0713 15:51:32.266662 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
-[33mgeth_2_1       |[0m I0713 15:51:32.662673 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
-[36mgeth_1_1       |[0m I0713 15:51:52.267288 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
-[33mgeth_2_1       |[0m I0713 15:51:52.663554 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+Attaching to ethereumplay_geth_1_1, ethereumplay_tx_firer_1, ethereumplay_tx_listener_1
+[36mgeth_1_1       |[0m I0720 09:34:55.570801 ethdb/database.go:82] Alloted 128MB cache and 1024 file handles to /root/.ethereum/chaindata
+[33mtx_firer_1     |[0m **************tx_firer launched *******************
+[36mgeth_1_1       |[0m I0720 09:34:55.595180 ethdb/database.go:169] closed db:/root/.ethereum/chaindata
+[33mtx_firer_1     |[0m web3 connect to: http://geth_1:8545
+[36mgeth_1_1       |[0m E0720 09:34:55.595376 accounts/addrcache.go:205] can't load keys: open /root/.ethereum/keystore: no such file or directory
+[36mgeth_1_1       |[0m I0720 09:34:55.595441 accounts/addrcache.go:215] reloaded keys, cache has 0 accounts
+[33mtx_firer_1     |[0m web3 connect to: http://geth_2:8545
+[36mgeth_1_1       |[0m I0720 09:34:55.595897 cmd/utils/flags.go:601] WARNING: No etherbase set and no accounts found as default
+[36mgeth_1_1       |[0m I0720 09:34:55.596626 accounts/watch.go:70] can't watch /root/.ethereum/keystore: lstat /root/.ethereum/keystore: no such file or directory
+[33mtx_firer_1     |[0m Server running at http://127.0.0.1:8081/
+[36mgeth_1_1       |[0m I0720 09:34:55.597502 ethdb/database.go:82] Alloted 128MB cache and 1024 file handles to /root/.ethereum/chaindata
+[36mgeth_1_1       |[0m I0720 09:34:55.632659 eth/backend.go:619] upgrading db log bloom bins
+[36mgeth_1_1       |[0m I0720 09:34:55.632846 eth/backend.go:627] upgrade completed in 203.427µs
+[36mgeth_1_1       |[0m I0720 09:34:55.632896 ethdb/database.go:82] Alloted 16MB cache and 16 file handles to /root/.ethereum/dapp
+[36mgeth_1_1       |[0m I0720 09:34:55.639598 eth/backend.go:172] Protocol Versions: [63 62 61], Network Id: 12902
+[36mgeth_1_1       |[0m I0720 09:34:55.639810 eth/backend.go:201] Blockchain DB Version: 3
+[36mgeth_1_1       |[0m I0720 09:34:55.640448 core/blockchain.go:206] Last header: #0 [38439bfe…] TD=1048576
+[36mgeth_1_1       |[0m I0720 09:34:55.640478 core/blockchain.go:207] Last block: #0 [38439bfe…] TD=1048576
+[36mgeth_1_1       |[0m I0720 09:34:55.640484 core/blockchain.go:208] Fast block: #0 [38439bfe…] TD=1048576
+[36mgeth_1_1       |[0m I0720 09:34:55.640677 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m E0720 09:34:55.640704 accounts/addrcache.go:205] can't load keys: open /root/.ethereum/keystore: no such file or directory
+[36mgeth_1_1       |[0m I0720 09:34:55.642881 accounts/addrcache.go:215] reloaded keys, cache has 0 accounts
+[36mgeth_1_1       |[0m I0720 09:34:55.640848 accounts/watch.go:70] can't watch /root/.ethereum/keystore: lstat /root/.ethereum/keystore: no such file or directory
+[36mgeth_1_1       |[0m I0720 09:34:55.644061 p2p/server.go:313] Starting Server
+[36mgeth_1_1       |[0m I0720 09:34:55.644522 node/node.go:259] InProc registered *node.PrivateAdminAPI under 'admin'
+[36mgeth_1_1       |[0m I0720 09:34:55.644770 node/node.go:259] InProc registered *node.PublicAdminAPI under 'admin'
+[36mgeth_1_1       |[0m I0720 09:34:55.645151 node/node.go:259] InProc registered *debug.HandlerT under 'debug'
+[36mgeth_1_1       |[0m I0720 09:34:55.645212 node/node.go:259] InProc registered *node.PublicDebugAPI under 'debug'
+[36mgeth_1_1       |[0m I0720 09:34:55.645436 node/node.go:259] InProc registered *node.PublicWeb3API under 'web3'
+[36mgeth_1_1       |[0m I0720 09:34:55.645492 node/node.go:259] InProc registered *eth.PublicEthereumAPI under 'eth'
+[36mgeth_1_1       |[0m I0720 09:34:55.645788 node/node.go:259] InProc registered *eth.PublicAccountAPI under 'eth'
+[36mgeth_1_1       |[0m I0720 09:34:55.644560 p2p/server.go:556] Listening on [::]:30303
+[36mgeth_1_1       |[0m I0720 09:34:55.646111 release/release.go:116] Release oracle not found at fa7b9770ca4cb04296cac84f37736d4041251cdf
+[36mgeth_1_1       |[0m I0720 09:34:55.646494 node/node.go:259] InProc registered *eth.PrivateAccountAPI under 'personal'
+[36mgeth_1_1       |[0m I0720 09:34:55.647459 node/node.go:259] InProc registered *eth.PublicBlockChainAPI under 'eth'
+[36mgeth_1_1       |[0m I0720 09:34:55.648069 node/node.go:259] InProc registered *eth.PublicTransactionPoolAPI under 'eth'
+[36mgeth_1_1       |[0m I0720 09:34:55.648494 node/node.go:259] InProc registered *eth.PublicMinerAPI under 'eth'
+[36mgeth_1_1       |[0m I0720 09:34:55.649020 node/node.go:259] InProc registered *downloader.PublicDownloaderAPI under 'eth'
+[36mgeth_1_1       |[0m I0720 09:34:55.649552 node/node.go:259] InProc registered *eth.PrivateMinerAPI under 'miner'
+[36mgeth_1_1       |[0m I0720 09:34:55.650406 node/node.go:259] InProc registered *eth.PublicTxPoolAPI under 'txpool'
+[36mgeth_1_1       |[0m I0720 09:34:55.651049 node/node.go:259] InProc registered *filters.PublicFilterAPI under 'eth'
+[36mgeth_1_1       |[0m I0720 09:34:55.651107 node/node.go:259] InProc registered *eth.PrivateAdminAPI under 'admin'
+[36mgeth_1_1       |[0m I0720 09:34:55.651138 node/node.go:259] InProc registered *eth.PublicDebugAPI under 'debug'
+[36mgeth_1_1       |[0m I0720 09:34:55.651184 node/node.go:259] InProc registered *eth.PrivateDebugAPI under 'debug'
+[36mgeth_1_1       |[0m I0720 09:34:55.651212 node/node.go:259] InProc registered *eth.PublicNetAPI under 'net'
+[36mgeth_1_1       |[0m I0720 09:34:55.651250 node/node.go:259] InProc registered *ethreg.PrivateRegistarAPI under 'admin'
+[36mgeth_1_1       |[0m I0720 09:34:55.651288 node/node.go:285] IPC registered *node.PrivateAdminAPI under 'admin'
+[36mgeth_1_1       |[0m I0720 09:34:55.651313 node/node.go:285] IPC registered *node.PublicAdminAPI under 'admin'
+[36mgeth_1_1       |[0m I0720 09:34:55.651361 node/node.go:285] IPC registered *debug.HandlerT under 'debug'
+[36mgeth_1_1       |[0m I0720 09:34:55.651381 node/node.go:285] IPC registered *node.PublicDebugAPI under 'debug'
+[36mgeth_1_1       |[0m I0720 09:34:55.651401 node/node.go:285] IPC registered *node.PublicWeb3API under 'web3'
+[36mgeth_1_1       |[0m I0720 09:34:55.651431 node/node.go:285] IPC registered *eth.PublicEthereumAPI under 'eth'
+[36mgeth_1_1       |[0m I0720 09:34:55.651453 node/node.go:285] IPC registered *eth.PublicAccountAPI under 'eth'
+[36mgeth_1_1       |[0m I0720 09:34:55.651482 node/node.go:285] IPC registered *eth.PrivateAccountAPI under 'personal'
+[36mgeth_1_1       |[0m I0720 09:34:55.651548 node/node.go:285] IPC registered *eth.PublicBlockChainAPI under 'eth'
+[36mgeth_1_1       |[0m I0720 09:34:55.651953 node/node.go:285] IPC registered *eth.PublicTransactionPoolAPI under 'eth'
+[36mgeth_1_1       |[0m I0720 09:34:55.651993 node/node.go:285] IPC registered *eth.PublicMinerAPI under 'eth'
+[36mgeth_1_1       |[0m I0720 09:34:55.652013 node/node.go:285] IPC registered *downloader.PublicDownloaderAPI under 'eth'
+[36mgeth_1_1       |[0m I0720 09:34:55.652041 node/node.go:285] IPC registered *eth.PrivateMinerAPI under 'miner'
+[36mgeth_1_1       |[0m I0720 09:34:55.652062 node/node.go:285] IPC registered *eth.PublicTxPoolAPI under 'txpool'
+[36mgeth_1_1       |[0m I0720 09:34:55.652108 node/node.go:285] IPC registered *filters.PublicFilterAPI under 'eth'
+[36mgeth_1_1       |[0m I0720 09:34:55.652135 node/node.go:285] IPC registered *eth.PrivateAdminAPI under 'admin'
+[36mgeth_1_1       |[0m I0720 09:34:55.652162 node/node.go:285] IPC registered *eth.PublicDebugAPI under 'debug'
+[36mgeth_1_1       |[0m I0720 09:34:55.652208 node/node.go:285] IPC registered *eth.PrivateDebugAPI under 'debug'
+[36mgeth_1_1       |[0m I0720 09:34:55.652807 node/node.go:285] IPC registered *eth.PublicNetAPI under 'net'
+[36mgeth_1_1       |[0m I0720 09:34:55.652864 node/node.go:285] IPC registered *ethreg.PrivateRegistarAPI under 'admin'
+[36mgeth_1_1       |[0m I0720 09:34:55.653068 node/node.go:354] HTTP registered *node.PrivateAdminAPI under 'admin'
+[36mgeth_1_1       |[0m I0720 09:34:55.653099 node/node.go:354] HTTP registered *node.PublicAdminAPI under 'admin'
+[36mgeth_1_1       |[0m I0720 09:34:55.653120 node/node.go:354] HTTP registered *node.PublicWeb3API under 'web3'
+[36mgeth_1_1       |[0m I0720 09:34:55.653147 node/node.go:354] HTTP registered *eth.PublicEthereumAPI under 'eth'
+[36mgeth_1_1       |[0m I0720 09:34:55.653166 node/node.go:354] HTTP registered *eth.PublicAccountAPI under 'eth'
+[36mgeth_1_1       |[0m I0720 09:34:55.653196 node/node.go:354] HTTP registered *eth.PrivateAccountAPI under 'personal'
+[36mgeth_1_1       |[0m I0720 09:34:55.653258 node/node.go:354] HTTP registered *eth.PublicBlockChainAPI under 'eth'
+[36mgeth_1_1       |[0m I0720 09:34:55.653359 node/node.go:354] HTTP registered *eth.PublicTransactionPoolAPI under 'eth'
+[36mgeth_1_1       |[0m I0720 09:34:55.653387 node/node.go:354] HTTP registered *eth.PublicMinerAPI under 'eth'
+[36mgeth_1_1       |[0m I0720 09:34:55.653403 node/node.go:354] HTTP registered *downloader.PublicDownloaderAPI under 'eth'
+[36mgeth_1_1       |[0m I0720 09:34:55.653428 node/node.go:354] HTTP registered *eth.PrivateMinerAPI under 'miner'
+[36mgeth_1_1       |[0m I0720 09:34:55.653559 node/node.go:354] HTTP registered *filters.PublicFilterAPI under 'eth'
+[36mgeth_1_1       |[0m I0720 09:34:55.653585 node/node.go:354] HTTP registered *eth.PrivateAdminAPI under 'admin'
+[36mgeth_1_1       |[0m I0720 09:34:55.653603 node/node.go:354] HTTP registered *eth.PublicNetAPI under 'net'
+[36mgeth_1_1       |[0m I0720 09:34:55.653632 node/node.go:354] HTTP registered *ethreg.PrivateRegistarAPI under 'admin'
+[36mgeth_1_1       |[0m I0720 09:34:55.654313 node/node.go:366] HTTP endpoint opened: http://0.0.0.0:8545
+[36mgeth_1_1       |[0m I0720 09:34:55.654357 node/node.go:296] IPC endpoint opened: /root/.ethereum/geth.ipc
+[32mtx_listener_1  |[0m tx_listener called
+[36mgeth_1_1       |[0m I0720 09:34:57.673979 p2p/nat/nat.go:109] network port tcp:30303 could not be mapped: no UPnP or NAT-PMP router discovered
+[36mgeth_1_1       |[0m I0720 09:34:59.087753 accounts/addrcache.go:215] reloaded keys, cache has 1 accounts
+[36mgeth_1_1       |[0m I0720 09:34:59.088101 accounts/watch.go:74] now watching /root/.ethereum/keystore
+[36mgeth_1_1       |[0m I0720 09:34:59.088365 accounts/addrcache.go:215] reloaded keys, cache has 1 accounts
+[36mgeth_1_1       |[0m I0720 09:35:00.269078 miner/miner.go:119] Starting mining operation (CPU=1 TOT=2)
+[36mgeth_1_1       |[0m I0720 09:35:00.269253 eth/backend.go:452] Automatic pregeneration of ethash DAG ON (ethash dir: /root/.ethash)
+[36mgeth_1_1       |[0m I0720 09:35:00.269681 eth/backend.go:459] checking DAG (ethash dir: /root/.ethash)
+[36mgeth_1_1       |[0m I0720 09:35:00.270089 core/state/statedb.go:289] (+) 2fed46568e8e907aa3de17a3cbcc7feed5a3fdcf
+[36mgeth_1_1       |[0m I0720 09:35:00.270187 core/state/state_object.go:160] 2fed46568e8e907aa3de17a3cbcc7feed5a3fdcf: #0 5000000000000000000 (+ 5000000000000000000)
+[36mgeth_1_1       |[0m I0720 09:35:00.270593 miner/worker.go:555] commit new work on block 1 with 0 txs & 0 uncles. Took 1.076724ms
+[36mgeth_1_1       |[0m I0720 09:35:00.270759 miner/agent.go:118] (re)started agent[0]. mining...
+[36mgeth_1_1       |[0m I0720 09:35:00.270872 ethash.go:259] Generating DAG for epoch 0 (size 1073739904) (0000000000000000000000000000000000000000000000000000000000000000)
+[32mtx_listener_1  |[0m createWS called
+[32mtx_listener_1  |[0m error:  { [Error: connect ECONNREFUSED 172.21.0.2:8546]
+[32mtx_listener_1  |[0m   code: 'ECONNREFUSED',
+[32mtx_listener_1  |[0m   errno: 'ECONNREFUSED',
+[32mtx_listener_1  |[0m   syscall: 'connect',
+[32mtx_listener_1  |[0m   address: '172.21.0.2',
+[32mtx_listener_1  |[0m   port: 8546 }
+[32methereumplay_tx_listener_1 exited with code 0
+[0m[36mgeth_1_1       |[0m I0720 09:35:06.857501 ethash.go:276] Done generating DAG for epoch 0, it took 6.586633197s
+[36mgeth_1_1       |[0m I0720 09:35:07.809735 ethash.go:209] No pre-generated DAG available, creating new for epoch 0
+[36mgeth_1_1       |[0m I0720 09:35:07.809766 ethash.go:216] Pre-generating DAG for epoch 1
+[36mgeth_1_1       |[0m I0720 09:35:07.809776 ethash.go:92] Generating cache for epoch 0 (0000000000000000000000000000000000000000000000000000000000000000)
+[36mgeth_1_1       |[0m I0720 09:35:07.810350 ethash.go:92] Generating cache for epoch 1 (290decd9548b62a8d60345a988386fc84ba6bc95484008f6362f93160ef3e563)
+[36mgeth_1_1       |[0m I0720 09:35:08.634043 ethash.go:99] Done generating cache for epoch 0, it took 824.25924ms
+[36mgeth_1_1       |[0m I0720 09:35:08.638085 core/database_util.go:314] stored block total difficulty [47867f2c…]: 2096640
+[36mgeth_1_1       |[0m I0720 09:35:08.638143 core/database_util.go:299] stored block body [47867f2c…]
+[36mgeth_1_1       |[0m I0720 09:35:08.638170 core/database_util.go:284] stored header #1 [47867f2c…]
+[36mgeth_1_1       |[0m I0720 09:35:08.638286 miner/worker.go:337] 🔨  Mined block (#1 / 47867f2c). Wait 5 blocks for confirmation
+[36mgeth_1_1       |[0m I0720 09:35:08.638806 core/state/state_object.go:160] 2fed46568e8e907aa3de17a3cbcc7feed5a3fdcf: #0 10000000000000000000 (+ 5000000000000000000)
+[36mgeth_1_1       |[0m I0720 09:35:08.639161 eth/handler.go:752] propagated block 47867f2c to 0 peers in 2562047h47m16.854775807s
+[36mgeth_1_1       |[0m I0720 09:35:08.639282 eth/handler.go:763] announced block 47867f2c to 0 peers in 2562047h47m16.854775807s
+[36mgeth_1_1       |[0m I0720 09:35:08.639476 core/database_util.go:349] stored block receipts [47867f2c…]
+[36mgeth_1_1       |[0m I0720 09:35:08.639477 eth/handler.go:763] announced block 47867f2c to 0 peers in 2562047h47m16.854775807s
+[36mgeth_1_1       |[0m I0720 09:35:08.639206 miner/worker.go:555] commit new work on block 2 with 0 txs & 0 uncles. Took 902.83µs
+[36mgeth_1_1       |[0m I0720 09:35:08.639567 miner/agent.go:118] (re)started agent[0]. mining...
+[36mgeth_1_1       |[0m I0720 09:35:08.639853 core/state/state_object.go:160] 2fed46568e8e907aa3de17a3cbcc7feed5a3fdcf: #0 10000000000000000000 (+ 5000000000000000000)
+[36mgeth_1_1       |[0m I0720 09:35:08.640000 miner/worker.go:555] commit new work on block 2 with 0 txs & 0 uncles. Took 489.931µs
+[36mgeth_1_1       |[0m I0720 09:35:08.640104 miner/agent.go:118] (re)started agent[0]. mining...
+[36mgeth_1_1       |[0m I0720 09:35:08.654272 ethash.go:99] Done generating cache for epoch 1, it took 843.944616ms
+[36mgeth_1_1       |[0m I0720 09:35:15.645968 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0720 09:35:17.008767 core/database_util.go:314] stored block total difficulty [3117273d…]: 3145215
+[36mgeth_1_1       |[0m I0720 09:35:17.009579 core/database_util.go:299] stored block body [3117273d…]
+[36mgeth_1_1       |[0m I0720 09:35:17.009695 core/database_util.go:284] stored header #2 [3117273d…]
+[36mgeth_1_1       |[0m I0720 09:35:17.009860 miner/worker.go:337] 🔨  Mined block (#2 / 3117273d). Wait 5 blocks for confirmation
+[36mgeth_1_1       |[0m I0720 09:35:17.010681 eth/handler.go:752] propagated block 3117273d to 0 peers in 2562047h47m16.854775807s
+[36mgeth_1_1       |[0m I0720 09:35:17.010729 eth/handler.go:763] announced block 3117273d to 0 peers in 2562047h47m16.854775807s
+[36mgeth_1_1       |[0m I0720 09:35:17.010736 eth/handler.go:763] announced block 3117273d to 0 peers in 2562047h47m16.854775807s
+[36mgeth_1_1       |[0m I0720 09:35:17.010827 core/database_util.go:349] stored block receipts [3117273d…]
+[36mgeth_1_1       |[0m I0720 09:35:17.011519 core/state/state_object.go:160] 2fed46568e8e907aa3de17a3cbcc7feed5a3fdcf: #0 15000000000000000000 (+ 5000000000000000000)
+[36mgeth_1_1       |[0m I0720 09:35:17.011594 miner/worker.go:555] commit new work on block 3 with 0 txs & 0 uncles. Took 1.70701ms
+[36mgeth_1_1       |[0m I0720 09:35:17.012085 miner/agent.go:118] (re)started agent[0]. mining...
+[36mgeth_1_1       |[0m I0720 09:35:17.012041 core/state/state_object.go:160] 2fed46568e8e907aa3de17a3cbcc7feed5a3fdcf: #0 15000000000000000000 (+ 5000000000000000000)
+[36mgeth_1_1       |[0m I0720 09:35:17.022646 miner/worker.go:555] commit new work on block 3 with 0 txs & 0 uncles. Took 10.743071ms
+[36mgeth_1_1       |[0m I0720 09:35:17.022797 miner/agent.go:118] (re)started agent[0]. mining...
+[36mgeth_1_1       |[0m I0720 09:35:35.646258 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0720 09:35:55.648242 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0720 09:36:15.648497 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0720 09:36:35.652603 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0720 09:36:55.655208 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0720 09:37:15.655423 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0720 09:37:35.882391 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0720 09:37:55.888753 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0720 09:38:15.890329 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0720 09:38:35.891942 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s

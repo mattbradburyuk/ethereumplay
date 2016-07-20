@@ -52,7 +52,8 @@ function sendTx(){
     web3geth1.personal.unlockAccount(addr1,'mattspass');
     web3geth2.personal.unlockAccount(addr2,'mattspass');
 
-    var resp = web3geth1.eth.sendTransaction({from:addr1, to: addr2, value: 1001});
+    // var resp = web3geth1.eth.sendTransaction({from:addr1, to: addr2, value: 1001 });
+    var resp = web3geth1.eth.sendTransaction({from:addr1, to: addr2, value: 1001, data:900 });
     console.log('tx receipt: ', resp);
     return resp;
 }

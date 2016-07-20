@@ -5,19 +5,14 @@ services:
     ports:
      - "8541:8545"
      - "30301:30303"
-  geth_2:
-    image: ethereumplay/geth_1.4.7_vanilla
-    ports:
-     - "8542:8545"
-     - "30302:30303"
-    depends_on:
-     - geth_1
+     - "8551:8546"
+     - "6060:6060"
   tx_firer:
     image: ethereumplay/tx_firer
     ports:
      - "8081:8081"
     depends_on:
-     - geth_2
+     - geth_1
   tx_listener:
     image: ethereumplay/tx_listener
     depends_on:

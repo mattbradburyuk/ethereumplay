@@ -69,7 +69,7 @@ function stopMining(){
 function checkBalancesNonZero() {
     if (hasEther(web3geth1)) {
         console.log('balance non zero');
-        console.log('stopping mining in 5s so that it has some ether...');
+        console.log('stopping mining ...');
         setTimeout(stopMining, 5000);
         clearInterval(balanceCheckerTimer);
     } else {

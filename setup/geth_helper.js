@@ -18,8 +18,6 @@
 // this is very dodgy as can't guarantee that docker will assign this ip
 
 
-
-
 // command line read in for future expansion (possibly making it take the ips/ports in)
 
 const commandLineArgs = require('command-line-args');
@@ -135,11 +133,11 @@ function stopBothMining(){
 
 function checkBalancesNonZero() {
     if (hasEther(web3geth1) && hasEther(web3geth2)) {
-        console.log('both balances now non-zero... stopping mining in 5 seconds');
+        console.log('both balances now non-zero... stopping mining...');
         setTimeout(stopBothMining, 5000);
         clearInterval(balanceCheckerTimer);
     } else {
-        console.log('(still) waiting for both accounts to have ether...');
+        console.log('waiting for accounts to have ether...');
     }
 }
 

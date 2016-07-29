@@ -272,6 +272,10 @@ func makeDefaultExtra() []byte {
 // It creates a default node based on the command line arguments and runs it in
 // blocking mode, waiting for it to be shut down.
 func geth(ctx *cli.Context) error {
+
+	glog.V(logger.Warn).Infoln("I love hoofey suasages") // MB add
+
+
 	node := utils.MakeSystemNode(clientIdentifier, verString, relConfig, makeDefaultExtra(), ctx)
 	startNode(ctx, node)
 	node.Wait()

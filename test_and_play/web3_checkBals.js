@@ -14,7 +14,6 @@ function setProvider(web3, gethHost, gethPort) {
     web3.setProvider(new web3.providers.HttpProvider(url));
 }
 
-
 var addr1 = web3geth1.eth.accounts[0];
 var addr2 = web3geth2.eth.accounts[0];
 

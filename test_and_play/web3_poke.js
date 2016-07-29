@@ -1,6 +1,6 @@
+// web3_poke.js
 
 // uses web3 interface to get the timing and difficulty from all blocks
-
 // (synchronous and very slow)
 
 const Web3 = require('web3');
@@ -16,12 +16,9 @@ function setProvider(web3, gethHost, gethPort) {
     web3.setProvider(new web3.providers.HttpProvider(url));
 }
 
-
 var bn = web3geth1.eth.blockNumber
 
 var i
-
-
 
 for (i = 0; i <bn; i++) {
 

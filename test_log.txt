@@ -1,98 +1,91 @@
 Attaching to ethereumplay_geth_1_1, ethereumplay_tx_firer_1, ethereumplay_tx_listener_1
-[36mgeth_1_1       |[0m I0729 11:07:22.232012 cmd/geth/main.go:276] I love hoofey suasages
-[36mgeth_1_1       |[0m I0729 11:07:22.232445 ethdb/database.go:82] Alloted 128MB cache and 1024 file handles to /root/.ethereum/chaindata
+[36mgeth_1_1       |[0m I0729 12:50:54.242802 cmd/geth/main.go:276] I love hoofey suasages
 [33mtx_firer_1     |[0m **************tx_firer launched *******************
-[36mgeth_1_1       |[0m I0729 11:07:22.242706 ethdb/database.go:169] closed db:/root/.ethereum/chaindata
+[36mgeth_1_1       |[0m I0729 12:50:54.244125 cmd/utils/flags.go:687] You're one of the lucky few that will try out the JIT VM (random). If you get a consensus failure please be so kind to report this incident with the block hash that failed. You can switch to the regular VM by setting --jitvm=false
+[36mgeth_1_1       |[0m I0729 12:50:54.244168 ethdb/database.go:82] Alloted 128MB cache and 1024 file handles to /root/.ethereum/chaindata
 [33mtx_firer_1     |[0m web3 connect to: http://geth_1:8545
-[36mgeth_1_1       |[0m E0729 11:07:22.242780 accounts/addrcache.go:205] can't load keys: open /root/.ethereum/keystore: no such file or directory
-[36mgeth_1_1       |[0m I0729 11:07:22.242801 accounts/addrcache.go:215] reloaded keys, cache has 0 accounts
-[36mgeth_1_1       |[0m I0729 11:07:22.242812 cmd/utils/flags.go:601] WARNING: No etherbase set and no accounts found as default
+[36mgeth_1_1       |[0m I0729 12:50:54.255581 ethdb/database.go:169] closed db:/root/.ethereum/chaindata
+[36mgeth_1_1       |[0m E0729 12:50:54.255740 accounts/addrcache.go:205] can't load keys: open /root/.ethereum/keystore: no such file or directory
+[36mgeth_1_1       |[0m I0729 12:50:54.255778 accounts/addrcache.go:215] reloaded keys, cache has 0 accounts
 [33mtx_firer_1     |[0m web3 connect to: http://geth_2:8545
+[36mgeth_1_1       |[0m I0729 12:50:54.255800 cmd/utils/flags.go:601] WARNING: No etherbase set and no accounts found as default
 [33mtx_firer_1     |[0m Server running at http://127.0.0.1:8081/
-[36mgeth_1_1       |[0m I0729 11:07:22.243432 ethdb/database.go:82] Alloted 128MB cache and 1024 file handles to /root/.ethereum/chaindata
-[36mgeth_1_1       |[0m I0729 11:07:22.251593 accounts/watch.go:70] can't watch /root/.ethereum/keystore: lstat /root/.ethereum/keystore: no such file or directory
-[36mgeth_1_1       |[0m I0729 11:07:22.259021 eth/backend.go:619] upgrading db log bloom bins
-[36mgeth_1_1       |[0m I0729 11:07:22.259473 eth/backend.go:627] upgrade completed in 452.724µs
-[36mgeth_1_1       |[0m I0729 11:07:22.259555 ethdb/database.go:82] Alloted 16MB cache and 16 file handles to /root/.ethereum/dapp
-[36mgeth_1_1       |[0m I0729 11:07:22.264791 eth/backend.go:172] Protocol Versions: [63 62 61], Network Id: 12902
-[36mgeth_1_1       |[0m I0729 11:07:22.264888 eth/backend.go:201] Blockchain DB Version: 3
-[36mgeth_1_1       |[0m I0729 11:07:22.266511 core/blockchain.go:206] Last header: #0 [38439bfe…] TD=1048576
-[36mgeth_1_1       |[0m I0729 11:07:22.266560 core/blockchain.go:207] Last block: #0 [38439bfe…] TD=1048576
-[36mgeth_1_1       |[0m I0729 11:07:22.266571 core/blockchain.go:208] Fast block: #0 [38439bfe…] TD=1048576
-[36mgeth_1_1       |[0m I0729 11:07:22.267400 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
-[36mgeth_1_1       |[0m I0729 11:07:22.268069 p2p/server.go:313] Starting Server
-[36mgeth_1_1       |[0m I0729 11:07:22.269674 node/node.go:259] InProc registered *node.PrivateAdminAPI under 'admin'
-[36mgeth_1_1       |[0m I0729 11:07:22.269760 node/node.go:259] InProc registered *node.PublicAdminAPI under 'admin'
-[36mgeth_1_1       |[0m I0729 11:07:22.269788 node/node.go:259] InProc registered *debug.HandlerT under 'debug'
-[36mgeth_1_1       |[0m I0729 11:07:22.269836 node/node.go:259] InProc registered *node.PublicDebugAPI under 'debug'
-[36mgeth_1_1       |[0m I0729 11:07:22.269843 node/node.go:259] InProc registered *node.PublicWeb3API under 'web3'
-[36mgeth_1_1       |[0m I0729 11:07:22.269857 node/node.go:259] InProc registered *eth.PublicEthereumAPI under 'eth'
-[36mgeth_1_1       |[0m I0729 11:07:22.269863 node/node.go:259] InProc registered *eth.PublicAccountAPI under 'eth'
-[36mgeth_1_1       |[0m I0729 11:07:22.269875 node/node.go:259] InProc registered *eth.PrivateAccountAPI under 'personal'
-[36mgeth_1_1       |[0m I0729 11:07:22.269904 node/node.go:259] InProc registered *eth.PublicBlockChainAPI under 'eth'
-[36mgeth_1_1       |[0m I0729 11:07:22.269948 node/node.go:259] InProc registered *eth.PublicTransactionPoolAPI under 'eth'
-[36mgeth_1_1       |[0m I0729 11:07:22.269957 node/node.go:259] InProc registered *eth.PublicMinerAPI under 'eth'
-[36mgeth_1_1       |[0m I0729 11:07:22.269962 node/node.go:259] InProc registered *downloader.PublicDownloaderAPI under 'eth'
-[36mgeth_1_1       |[0m I0729 11:07:22.269972 node/node.go:259] InProc registered *eth.PrivateMinerAPI under 'miner'
-[36mgeth_1_1       |[0m I0729 11:07:22.269978 node/node.go:259] InProc registered *eth.PublicTxPoolAPI under 'txpool'
-[36mgeth_1_1       |[0m I0729 11:07:22.269997 node/node.go:259] InProc registered *filters.PublicFilterAPI under 'eth'
-[36mgeth_1_1       |[0m I0729 11:07:22.270006 node/node.go:259] InProc registered *eth.PrivateAdminAPI under 'admin'
-[36mgeth_1_1       |[0m I0729 11:07:22.270015 node/node.go:259] InProc registered *eth.PublicDebugAPI under 'debug'
-[36mgeth_1_1       |[0m I0729 11:07:22.269664 p2p/server.go:556] Listening on [::]:30303
-[36mgeth_1_1       |[0m I0729 11:07:22.270827 node/node.go:259] InProc registered *eth.PrivateDebugAPI under 'debug'
-[36mgeth_1_1       |[0m I0729 11:07:22.271280 release/release.go:116] Release oracle not found at fa7b9770ca4cb04296cac84f37736d4041251cdf
-[36mgeth_1_1       |[0m I0729 11:07:22.271380 node/node.go:259] InProc registered *eth.PublicNetAPI under 'net'
-[36mgeth_1_1       |[0m I0729 11:07:22.271435 node/node.go:259] InProc registered *ethreg.PrivateRegistarAPI under 'admin'
-[36mgeth_1_1       |[0m I0729 11:07:22.271856 node/node.go:285] IPC registered *node.PrivateAdminAPI under 'admin'
-[36mgeth_1_1       |[0m I0729 11:07:22.272057 node/node.go:285] IPC registered *node.PublicAdminAPI under 'admin'
-[36mgeth_1_1       |[0m I0729 11:07:22.272496 node/node.go:285] IPC registered *debug.HandlerT under 'debug'
-[36mgeth_1_1       |[0m I0729 11:07:22.272528 node/node.go:285] IPC registered *node.PublicDebugAPI under 'debug'
-[36mgeth_1_1       |[0m I0729 11:07:22.272727 node/node.go:285] IPC registered *node.PublicWeb3API under 'web3'
-[36mgeth_1_1       |[0m I0729 11:07:22.272754 node/node.go:285] IPC registered *eth.PublicEthereumAPI under 'eth'
-[36mgeth_1_1       |[0m I0729 11:07:22.272765 node/node.go:285] IPC registered *eth.PublicAccountAPI under 'eth'
-[36mgeth_1_1       |[0m I0729 11:07:22.272824 node/node.go:285] IPC registered *eth.PrivateAccountAPI under 'personal'
-[36mgeth_1_1       |[0m I0729 11:07:22.273045 node/node.go:285] IPC registered *eth.PublicBlockChainAPI under 'eth'
-[36mgeth_1_1       |[0m I0729 11:07:22.273084 node/node.go:285] IPC registered *eth.PublicTransactionPoolAPI under 'eth'
-[36mgeth_1_1       |[0m I0729 11:07:22.273094 node/node.go:285] IPC registered *eth.PublicMinerAPI under 'eth'
-[36mgeth_1_1       |[0m I0729 11:07:22.273099 node/node.go:285] IPC registered *downloader.PublicDownloaderAPI under 'eth'
-[36mgeth_1_1       |[0m I0729 11:07:22.273109 node/node.go:285] IPC registered *eth.PrivateMinerAPI under 'miner'
-[36mgeth_1_1       |[0m I0729 11:07:22.273115 node/node.go:285] IPC registered *eth.PublicTxPoolAPI under 'txpool'
-[36mgeth_1_1       |[0m I0729 11:07:22.273135 node/node.go:285] IPC registered *filters.PublicFilterAPI under 'eth'
-[36mgeth_1_1       |[0m I0729 11:07:22.273144 node/node.go:285] IPC registered *eth.PrivateAdminAPI under 'admin'
-[36mgeth_1_1       |[0m I0729 11:07:22.273153 node/node.go:285] IPC registered *eth.PublicDebugAPI under 'debug'
-[36mgeth_1_1       |[0m I0729 11:07:22.273173 node/node.go:285] IPC registered *eth.PrivateDebugAPI under 'debug'
-[36mgeth_1_1       |[0m I0729 11:07:22.273179 node/node.go:285] IPC registered *eth.PublicNetAPI under 'net'
-[36mgeth_1_1       |[0m I0729 11:07:22.273192 node/node.go:285] IPC registered *ethreg.PrivateRegistarAPI under 'admin'
-[36mgeth_1_1       |[0m I0729 11:07:22.273336 node/node.go:354] HTTP registered *node.PrivateAdminAPI under 'admin'
-[36mgeth_1_1       |[0m I0729 11:07:22.273347 node/node.go:354] HTTP registered *node.PublicAdminAPI under 'admin'
-[36mgeth_1_1       |[0m I0729 11:07:22.273352 node/node.go:354] HTTP registered *node.PublicWeb3API under 'web3'
-[36mgeth_1_1       |[0m I0729 11:07:22.273362 node/node.go:354] HTTP registered *eth.PublicEthereumAPI under 'eth'
-[36mgeth_1_1       |[0m I0729 11:07:22.273367 node/node.go:354] HTTP registered *eth.PublicAccountAPI under 'eth'
-[36mgeth_1_1       |[0m I0729 11:07:22.273377 node/node.go:354] HTTP registered *eth.PrivateAccountAPI under 'personal'
-[36mgeth_1_1       |[0m I0729 11:07:22.273404 node/node.go:354] HTTP registered *eth.PublicBlockChainAPI under 'eth'
-[36mgeth_1_1       |[0m I0729 11:07:22.273433 node/node.go:354] HTTP registered *eth.PublicTransactionPoolAPI under 'eth'
-[36mgeth_1_1       |[0m I0729 11:07:22.273441 node/node.go:354] HTTP registered *eth.PublicMinerAPI under 'eth'
-[36mgeth_1_1       |[0m I0729 11:07:22.273446 node/node.go:354] HTTP registered *downloader.PublicDownloaderAPI under 'eth'
-[36mgeth_1_1       |[0m I0729 11:07:22.273456 node/node.go:354] HTTP registered *eth.PrivateMinerAPI under 'miner'
-[36mgeth_1_1       |[0m I0729 11:07:22.273473 node/node.go:354] HTTP registered *filters.PublicFilterAPI under 'eth'
-[36mgeth_1_1       |[0m I0729 11:07:22.273480 node/node.go:354] HTTP registered *eth.PrivateAdminAPI under 'admin'
-[36mgeth_1_1       |[0m I0729 11:07:22.273485 node/node.go:354] HTTP registered *eth.PublicNetAPI under 'net'
-[36mgeth_1_1       |[0m I0729 11:07:22.273497 node/node.go:354] HTTP registered *ethreg.PrivateRegistarAPI under 'admin'
-[36mgeth_1_1       |[0m I0729 11:07:22.273528 node/node.go:366] HTTP endpoint opened: http://0.0.0.0:8545
-[36mgeth_1_1       |[0m I0729 11:07:22.273579 node/node.go:296] IPC endpoint opened: /root/.ethereum/geth.ipc
+[36mgeth_1_1       |[0m I0729 12:50:54.256402 ethdb/database.go:82] Alloted 128MB cache and 1024 file handles to /root/.ethereum/chaindata
+[36mgeth_1_1       |[0m I0729 12:50:54.257042 accounts/watch.go:70] can't watch /root/.ethereum/keystore: lstat /root/.ethereum/keystore: no such file or directory
+[36mgeth_1_1       |[0m I0729 12:50:54.278035 eth/backend.go:619] upgrading db log bloom bins
+[36mgeth_1_1       |[0m I0729 12:50:54.278430 eth/backend.go:627] upgrade completed in 399.088µs
+[36mgeth_1_1       |[0m I0729 12:50:54.278562 ethdb/database.go:82] Alloted 16MB cache and 16 file handles to /root/.ethereum/dapp
+[36mgeth_1_1       |[0m I0729 12:50:54.282961 eth/backend.go:172] Protocol Versions: [63 62 61], Network Id: 12902
+[36mgeth_1_1       |[0m I0729 12:50:54.283396 eth/backend.go:201] Blockchain DB Version: 3
+[36mgeth_1_1       |[0m I0729 12:50:54.284089 core/blockchain.go:206] Last header: #0 [38439bfe…] TD=1048576
+[36mgeth_1_1       |[0m I0729 12:50:54.284236 core/blockchain.go:207] Last block: #0 [38439bfe…] TD=1048576
+[36mgeth_1_1       |[0m I0729 12:50:54.284349 core/blockchain.go:208] Fast block: #0 [38439bfe…] TD=1048576
+[36mgeth_1_1       |[0m I0729 12:50:54.284752 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 12:50:54.285418 p2p/server.go:313] Starting Server
+[36mgeth_1_1       |[0m I0729 12:50:54.285706 node/node.go:259] InProc registered *node.PrivateAdminAPI under 'admin'
+[36mgeth_1_1       |[0m I0729 12:50:54.285772 node/node.go:259] InProc registered *node.PublicAdminAPI under 'admin'
+[36mgeth_1_1       |[0m I0729 12:50:54.285863 node/node.go:259] InProc registered *debug.HandlerT under 'debug'
+[36mgeth_1_1       |[0m I0729 12:50:54.285900 node/node.go:259] InProc registered *node.PublicDebugAPI under 'debug'
+[36mgeth_1_1       |[0m I0729 12:50:54.286006 node/node.go:259] InProc registered *node.PublicWeb3API under 'web3'
+[36mgeth_1_1       |[0m I0729 12:50:54.286054 node/node.go:259] InProc registered *eth.PublicEthereumAPI under 'eth'
+[36mgeth_1_1       |[0m I0729 12:50:54.286152 node/node.go:259] InProc registered *eth.PublicAccountAPI under 'eth'
+[36mgeth_1_1       |[0m I0729 12:50:54.286247 node/node.go:259] InProc registered *eth.PrivateAccountAPI under 'personal'
+[36mgeth_1_1       |[0m I0729 12:50:54.286338 node/node.go:259] InProc registered *eth.PublicBlockChainAPI under 'eth'
+[36mgeth_1_1       |[0m I0729 12:50:54.286465 node/node.go:259] InProc registered *eth.PublicTransactionPoolAPI under 'eth'
+[36mgeth_1_1       |[0m I0729 12:50:54.286572 node/node.go:259] InProc registered *eth.PublicMinerAPI under 'eth'
+[36mgeth_1_1       |[0m I0729 12:50:54.286620 node/node.go:259] InProc registered *downloader.PublicDownloaderAPI under 'eth'
+[36mgeth_1_1       |[0m I0729 12:50:54.286697 node/node.go:259] InProc registered *eth.PrivateMinerAPI under 'miner'
+[36mgeth_1_1       |[0m I0729 12:50:54.286747 node/node.go:259] InProc registered *eth.PublicTxPoolAPI under 'txpool'
+[36mgeth_1_1       |[0m I0729 12:50:54.286854 node/node.go:259] InProc registered *filters.PublicFilterAPI under 'eth'
+[36mgeth_1_1       |[0m I0729 12:50:54.286941 node/node.go:259] InProc registered *eth.PrivateAdminAPI under 'admin'
+[36mgeth_1_1       |[0m I0729 12:50:54.286991 node/node.go:259] InProc registered *eth.PublicDebugAPI under 'debug'
+[36mgeth_1_1       |[0m I0729 12:50:54.287077 node/node.go:259] InProc registered *eth.PrivateDebugAPI under 'debug'
+[36mgeth_1_1       |[0m I0729 12:50:54.287111 node/node.go:259] InProc registered *eth.PublicNetAPI under 'net'
+[36mgeth_1_1       |[0m I0729 12:50:54.287166 node/node.go:259] InProc registered *ethreg.PrivateRegistarAPI under 'admin'
+[36mgeth_1_1       |[0m I0729 12:50:54.287247 node/node.go:285] IPC registered *node.PrivateAdminAPI under 'admin'
+[36mgeth_1_1       |[0m I0729 12:50:54.287348 node/node.go:285] IPC registered *node.PublicAdminAPI under 'admin'
+[36mgeth_1_1       |[0m I0729 12:50:54.287436 p2p/server.go:556] Listening on [::]:30303
+[36mgeth_1_1       |[0m I0729 12:50:54.287679 node/node.go:285] IPC registered *debug.HandlerT under 'debug'
+[36mgeth_1_1       |[0m I0729 12:50:54.287717 node/node.go:285] IPC registered *node.PublicDebugAPI under 'debug'
+[36mgeth_1_1       |[0m I0729 12:50:54.287754 node/node.go:285] IPC registered *node.PublicWeb3API under 'web3'
+[36mgeth_1_1       |[0m I0729 12:50:54.287875 node/node.go:285] IPC registered *eth.PublicEthereumAPI under 'eth'
+[36mgeth_1_1       |[0m I0729 12:50:54.287923 node/node.go:285] IPC registered *eth.PublicAccountAPI under 'eth'
+[36mgeth_1_1       |[0m I0729 12:50:54.288030 node/node.go:285] IPC registered *eth.PrivateAccountAPI under 'personal'
+[36mgeth_1_1       |[0m I0729 12:50:54.288134 node/node.go:285] IPC registered *eth.PublicBlockChainAPI under 'eth'
+[36mgeth_1_1       |[0m I0729 12:50:54.288354 node/node.go:285] IPC registered *eth.PublicTransactionPoolAPI under 'eth'
+[36mgeth_1_1       |[0m I0729 12:50:54.288419 node/node.go:285] IPC registered *eth.PublicMinerAPI under 'eth'
+[36mgeth_1_1       |[0m I0729 12:50:54.288452 node/node.go:285] IPC registered *downloader.PublicDownloaderAPI under 'eth'
+[36mgeth_1_1       |[0m I0729 12:50:54.288537 node/node.go:285] IPC registered *eth.PrivateMinerAPI under 'miner'
+[36mgeth_1_1       |[0m I0729 12:50:54.288572 node/node.go:285] IPC registered *eth.PublicTxPoolAPI under 'txpool'
+[36mgeth_1_1       |[0m I0729 12:50:54.288662 node/node.go:285] IPC registered *filters.PublicFilterAPI under 'eth'
+[36mgeth_1_1       |[0m I0729 12:50:54.288716 node/node.go:285] IPC registered *eth.PrivateAdminAPI under 'admin'
+[36mgeth_1_1       |[0m I0729 12:50:54.288802 node/node.go:285] IPC registered *eth.PublicDebugAPI under 'debug'
+[36mgeth_1_1       |[0m I0729 12:50:54.288989 node/node.go:285] IPC registered *eth.PrivateDebugAPI under 'debug'
+[36mgeth_1_1       |[0m I0729 12:50:54.289054 node/node.go:285] IPC registered *eth.PublicNetAPI under 'net'
+[36mgeth_1_1       |[0m I0729 12:50:54.289212 node/node.go:285] IPC registered *ethreg.PrivateRegistarAPI under 'admin'
+[36mgeth_1_1       |[0m I0729 12:50:54.289697 node/node.go:354] HTTP registered *node.PrivateAdminAPI under 'admin'
+[36mgeth_1_1       |[0m I0729 12:50:54.289740 node/node.go:354] HTTP registered *node.PublicAdminAPI under 'admin'
+[36mgeth_1_1       |[0m I0729 12:50:54.289758 node/node.go:354] HTTP registered *node.PublicWeb3API under 'web3'
+[36mgeth_1_1       |[0m I0729 12:50:54.289545 release/release.go:116] Release oracle not found at fa7b9770ca4cb04296cac84f37736d4041251cdf
+[36mgeth_1_1       |[0m I0729 12:50:54.289934 node/node.go:354] HTTP registered *eth.PublicEthereumAPI under 'eth'
+[36mgeth_1_1       |[0m I0729 12:50:54.290036 node/node.go:354] HTTP registered *eth.PublicAccountAPI under 'eth'
+[36mgeth_1_1       |[0m I0729 12:50:54.290105 node/node.go:354] HTTP registered *eth.PrivateAccountAPI under 'personal'
+[36mgeth_1_1       |[0m I0729 12:50:54.290006 node/node.go:296] IPC endpoint opened: /root/.ethereum/geth.ipc
+[36mgeth_1_1       |[0m I0729 12:50:54.290280 node/node.go:354] HTTP registered *eth.PublicBlockChainAPI under 'eth'
+[36mgeth_1_1       |[0m I0729 12:50:54.290441 node/node.go:354] HTTP registered *eth.PublicTransactionPoolAPI under 'eth'
+[36mgeth_1_1       |[0m I0729 12:50:54.290463 node/node.go:354] HTTP registered *eth.PublicMinerAPI under 'eth'
+[36mgeth_1_1       |[0m I0729 12:50:54.290475 node/node.go:354] HTTP registered *downloader.PublicDownloaderAPI under 'eth'
+[36mgeth_1_1       |[0m I0729 12:50:54.290491 node/node.go:354] HTTP registered *eth.PrivateMinerAPI under 'miner'
+[36mgeth_1_1       |[0m I0729 12:50:54.290558 node/node.go:354] HTTP registered *filters.PublicFilterAPI under 'eth'
+[36mgeth_1_1       |[0m I0729 12:50:54.290587 node/node.go:354] HTTP registered *eth.PrivateAdminAPI under 'admin'
+[36mgeth_1_1       |[0m I0729 12:50:54.290640 node/node.go:354] HTTP registered *eth.PublicNetAPI under 'net'
+[36mgeth_1_1       |[0m I0729 12:50:54.290699 node/node.go:354] HTTP registered *ethreg.PrivateRegistarAPI under 'admin'
+[36mgeth_1_1       |[0m I0729 12:50:54.290822 node/node.go:366] HTTP endpoint opened: http://0.0.0.0:8545
 [32mtx_listener_1  |[0m tx_listener called
-[36mgeth_1_1       |[0m I0729 11:07:24.336597 p2p/nat/nat.go:109] network port tcp:30303 could not be mapped: no UPnP or NAT-PMP router discovered
-[36mgeth_1_1       |[0m I0729 11:07:26.221170 accounts/addrcache.go:215] reloaded keys, cache has 1 accounts
-[36mgeth_1_1       |[0m I0729 11:07:26.221663 accounts/watch.go:74] now watching /root/.ethereum/keystore
-[36mgeth_1_1       |[0m I0729 11:07:26.221890 accounts/addrcache.go:215] reloaded keys, cache has 1 accounts
-[36mgeth_1_1       |[0m I0729 11:07:27.867138 miner/miner.go:119] Starting mining operation (CPU=1 TOT=2)
-[36mgeth_1_1       |[0m I0729 11:07:27.867445 core/state/statedb.go:289] (+) 29a706301653afb9f971b705594d8bfefe1e1bb0
-[36mgeth_1_1       |[0m I0729 11:07:27.867872 core/state/state_object.go:160] 29a706301653afb9f971b705594d8bfefe1e1bb0: #0 5000000000000000000 (+ 5000000000000000000)
-[36mgeth_1_1       |[0m I0729 11:07:27.868221 miner/worker.go:555] commit new work on block 1 with 0 txs & 0 uncles. Took 983.774µs
-[36mgeth_1_1       |[0m I0729 11:07:27.868537 miner/agent.go:118] (re)started agent[0]. mining...
-[36mgeth_1_1       |[0m I0729 11:07:27.871738 ethash.go:259] Generating DAG for epoch 0 (size 1073739904) (0000000000000000000000000000000000000000000000000000000000000000)
-[36mgeth_1_1       |[0m I0729 11:07:27.867480 eth/backend.go:452] Automatic pregeneration of ethash DAG ON (ethash dir: /root/.ethash)
-[36mgeth_1_1       |[0m I0729 11:07:27.883878 eth/backend.go:459] checking DAG (ethash dir: /root/.ethash)
+[36mgeth_1_1       |[0m I0729 12:50:56.351679 p2p/nat/nat.go:109] network port tcp:30303 could not be mapped: no UPnP or NAT-PMP router discovered
+[36mgeth_1_1       |[0m I0729 12:50:59.599170 accounts/watch.go:74] now watching /root/.ethereum/keystore
+[36mgeth_1_1       |[0m I0729 12:50:59.599857 accounts/addrcache.go:215] reloaded keys, cache has 1 accounts
+[36mgeth_1_1       |[0m I0729 12:50:59.605757 accounts/addrcache.go:215] reloaded keys, cache has 1 accounts
 [32mtx_listener_1  |[0m createWS called
 [32mtx_listener_1  |[0m error:  { [Error: connect ECONNREFUSED 172.21.0.2:8546]
 [32mtx_listener_1  |[0m   code: 'ECONNREFUSED',
@@ -101,62 +94,193 @@ Attaching to ethereumplay_geth_1_1, ethereumplay_tx_firer_1, ethereumplay_tx_lis
 [32mtx_listener_1  |[0m   address: '172.21.0.2',
 [32mtx_listener_1  |[0m   port: 8546 }
 [32methereumplay_tx_listener_1 exited with code 0
-[0m[36mgeth_1_1       |[0m I0729 11:07:39.810665 ethash.go:276] Done generating DAG for epoch 0, it took 11.938942904s
-[36mgeth_1_1       |[0m I0729 11:07:42.267805 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
-[36mgeth_1_1       |[0m I0729 11:08:02.268045 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
-[36mgeth_1_1       |[0m I0729 11:08:17.322813 ethash.go:209] No pre-generated DAG available, creating new for epoch 0
-[36mgeth_1_1       |[0m I0729 11:08:17.322894 ethash.go:216] Pre-generating DAG for epoch 1
-[36mgeth_1_1       |[0m I0729 11:08:17.322986 ethash.go:92] Generating cache for epoch 0 (0000000000000000000000000000000000000000000000000000000000000000)
-[36mgeth_1_1       |[0m I0729 11:08:17.323725 ethash.go:92] Generating cache for epoch 1 (290decd9548b62a8d60345a988386fc84ba6bc95484008f6362f93160ef3e563)
-[36mgeth_1_1       |[0m I0729 11:08:19.157120 ethash.go:99] Done generating cache for epoch 0, it took 1.834107019s
-[36mgeth_1_1       |[0m I0729 11:08:19.162125 core/database_util.go:314] stored block total difficulty [5d0a8db9…]: 2096640
-[36mgeth_1_1       |[0m I0729 11:08:19.162962 core/database_util.go:299] stored block body [5d0a8db9…]
-[36mgeth_1_1       |[0m I0729 11:08:19.163212 core/database_util.go:284] stored header #1 [5d0a8db9…]
-[36mgeth_1_1       |[0m I0729 11:08:19.163830 miner/worker.go:337] 🔨  Mined block (#1 / 5d0a8db9). Wait 5 blocks for confirmation
-[36mgeth_1_1       |[0m I0729 11:08:19.164509 core/state/state_object.go:160] 29a706301653afb9f971b705594d8bfefe1e1bb0: #0 10000000000000000000 (+ 5000000000000000000)
-[36mgeth_1_1       |[0m I0729 11:08:19.165351 miner/worker.go:555] commit new work on block 2 with 0 txs & 0 uncles. Took 1.069897ms
-[36mgeth_1_1       |[0m I0729 11:08:19.164563 eth/handler.go:752] propagated block 5d0a8db9 to 0 peers in 2562047h47m16.854775807s
-[36mgeth_1_1       |[0m I0729 11:08:19.165753 eth/handler.go:763] announced block 5d0a8db9 to 0 peers in 2562047h47m16.854775807s
-[36mgeth_1_1       |[0m I0729 11:08:19.165984 eth/handler.go:763] announced block 5d0a8db9 to 0 peers in 2562047h47m16.854775807s
-[36mgeth_1_1       |[0m I0729 11:08:19.164693 core/database_util.go:349] stored block receipts [5d0a8db9…]
-[36mgeth_1_1       |[0m I0729 11:08:19.166403 miner/agent.go:118] (re)started agent[0]. mining...
-[36mgeth_1_1       |[0m I0729 11:08:19.173676 ethash.go:99] Done generating cache for epoch 1, it took 1.849973253s
-[36mgeth_1_1       |[0m I0729 11:08:19.173873 core/state/state_object.go:160] 29a706301653afb9f971b705594d8bfefe1e1bb0: #0 10000000000000000000 (+ 5000000000000000000)
-[36mgeth_1_1       |[0m I0729 11:08:19.174538 miner/worker.go:555] commit new work on block 2 with 0 txs & 0 uncles. Took 8.498295ms
-[36mgeth_1_1       |[0m I0729 11:08:19.174639 miner/agent.go:118] (re)started agent[0]. mining...
-[36mgeth_1_1       |[0m I0729 11:08:22.268693 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
-[36mgeth_1_1       |[0m I0729 11:08:23.933143 core/database_util.go:314] stored block total difficulty [db4a33c6…]: 3144193
-[36mgeth_1_1       |[0m I0729 11:08:23.933222 core/database_util.go:299] stored block body [db4a33c6…]
-[36mgeth_1_1       |[0m I0729 11:08:23.933255 core/database_util.go:284] stored header #2 [db4a33c6…]
-[36mgeth_1_1       |[0m I0729 11:08:23.933636 miner/worker.go:337] 🔨  Mined block (#2 / db4a33c6). Wait 5 blocks for confirmation
-[36mgeth_1_1       |[0m I0729 11:08:23.934060 core/state/state_object.go:160] 29a706301653afb9f971b705594d8bfefe1e1bb0: #0 15000000000000000000 (+ 5000000000000000000)
-[36mgeth_1_1       |[0m I0729 11:08:23.934246 miner/worker.go:555] commit new work on block 3 with 0 txs & 0 uncles. Took 556.827µs
-[36mgeth_1_1       |[0m I0729 11:08:23.934301 miner/agent.go:118] (re)started agent[0]. mining...
-[36mgeth_1_1       |[0m I0729 11:08:23.935084 core/state/state_object.go:160] 29a706301653afb9f971b705594d8bfefe1e1bb0: #0 15000000000000000000 (+ 5000000000000000000)
-[36mgeth_1_1       |[0m I0729 11:08:23.935524 miner/worker.go:555] commit new work on block 3 with 0 txs & 0 uncles. Took 781.98µs
-[36mgeth_1_1       |[0m I0729 11:08:23.935630 miner/agent.go:118] (re)started agent[0]. mining...
-[36mgeth_1_1       |[0m I0729 11:08:23.935851 eth/handler.go:752] propagated block db4a33c6 to 0 peers in 2562047h47m16.854775807s
-[36mgeth_1_1       |[0m I0729 11:08:23.935906 eth/handler.go:763] announced block db4a33c6 to 0 peers in 2562047h47m16.854775807s
-[36mgeth_1_1       |[0m I0729 11:08:23.936132 eth/handler.go:763] announced block db4a33c6 to 0 peers in 2562047h47m16.854775807s
-[36mgeth_1_1       |[0m I0729 11:08:23.935833 core/database_util.go:349] stored block receipts [db4a33c6…]
-[36mgeth_1_1       |[0m I0729 11:08:42.269000 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
-[36mgeth_1_1       |[0m I0729 11:09:02.269988 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
-[36mgeth_1_1       |[0m I0729 11:09:22.270782 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
-[36mgeth_1_1       |[0m I0729 11:09:42.271732 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
-[36mgeth_1_1       |[0m I0729 11:10:02.272881 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
-[36mgeth_1_1       |[0m I0729 11:10:22.273466 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
-[36mgeth_1_1       |[0m I0729 11:10:42.275923 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
-[36mgeth_1_1       |[0m I0729 11:11:02.276346 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
-[36mgeth_1_1       |[0m I0729 11:11:22.277276 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
-[36mgeth_1_1       |[0m I0729 11:11:42.278758 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
-[36mgeth_1_1       |[0m I0729 11:12:02.280190 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
-[36mgeth_1_1       |[0m I0729 11:12:22.281777 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
-[36mgeth_1_1       |[0m I0729 11:12:42.287391 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
-[36mgeth_1_1       |[0m I0729 11:13:02.288095 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
-[36mgeth_1_1       |[0m I0729 11:13:22.289377 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
-[36mgeth_1_1       |[0m I0729 11:13:42.290741 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
-[36mgeth_1_1       |[0m I0729 11:14:02.291680 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
-[36mgeth_1_1       |[0m I0729 11:14:22.294939 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
-[36mgeth_1_1       |[0m I0729 11:14:42.295983 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
-[36mgeth_1_1       |[0m I0729 11:15:02.297060 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
-[36mgeth_1_1       |[0m I0729 11:15:22.297947 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[0m[36mgeth_1_1       |[0m I0729 12:51:01.227954 miner/miner.go:119] Starting mining operation (CPU=1 TOT=2)
+[36mgeth_1_1       |[0m I0729 12:51:01.228201 eth/backend.go:452] Automatic pregeneration of ethash DAG ON (ethash dir: /root/.ethash)
+[36mgeth_1_1       |[0m I0729 12:51:01.228904 eth/backend.go:459] checking DAG (ethash dir: /root/.ethash)
+[36mgeth_1_1       |[0m I0729 12:51:01.228924 core/state/statedb.go:289] (+) 04d6512f6d0d05af47095c52fb35fa00796d18ed
+[36mgeth_1_1       |[0m I0729 12:51:01.229024 core/state/state_object.go:160] 04d6512f6d0d05af47095c52fb35fa00796d18ed: #0 5000000000000000000 (+ 5000000000000000000)
+[36mgeth_1_1       |[0m I0729 12:51:01.229144 miner/worker.go:555] commit new work on block 1 with 0 txs & 0 uncles. Took 1.131443ms
+[36mgeth_1_1       |[0m I0729 12:51:01.229190 miner/agent.go:118] (re)started agent[0]. mining...
+[36mgeth_1_1       |[0m I0729 12:51:01.229225 ethash.go:259] Generating DAG for epoch 0 (size 1073739904) (0000000000000000000000000000000000000000000000000000000000000000)
+[36mgeth_1_1       |[0m I0729 12:51:09.846219 ethash.go:276] Done generating DAG for epoch 0, it took 8.616995206s
+[36mgeth_1_1       |[0m I0729 12:51:14.284990 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 12:51:23.251925 ethash.go:209] No pre-generated DAG available, creating new for epoch 0
+[36mgeth_1_1       |[0m I0729 12:51:23.252023 ethash.go:216] Pre-generating DAG for epoch 1
+[36mgeth_1_1       |[0m I0729 12:51:23.252057 ethash.go:92] Generating cache for epoch 0 (0000000000000000000000000000000000000000000000000000000000000000)
+[36mgeth_1_1       |[0m I0729 12:51:23.252685 ethash.go:92] Generating cache for epoch 1 (290decd9548b62a8d60345a988386fc84ba6bc95484008f6362f93160ef3e563)
+[36mgeth_1_1       |[0m I0729 12:51:24.876886 ethash.go:99] Done generating cache for epoch 0, it took 1.624823311s
+[36mgeth_1_1       |[0m I0729 12:51:24.882069 core/database_util.go:314] stored block total difficulty [2f5189bb…]: 2096640
+[36mgeth_1_1       |[0m I0729 12:51:24.882839 core/database_util.go:299] stored block body [2f5189bb…]
+[36mgeth_1_1       |[0m I0729 12:51:24.883199 core/database_util.go:284] stored header #1 [2f5189bb…]
+[36mgeth_1_1       |[0m I0729 12:51:24.883810 miner/worker.go:337] 🔨  Mined block (#1 / 2f5189bb). Wait 5 blocks for confirmation
+[36mgeth_1_1       |[0m I0729 12:51:24.884362 eth/handler.go:752] propagated block 2f5189bb to 0 peers in 2562047h47m16.854775807s
+[36mgeth_1_1       |[0m I0729 12:51:24.884953 eth/handler.go:763] announced block 2f5189bb to 0 peers in 2562047h47m16.854775807s
+[36mgeth_1_1       |[0m I0729 12:51:24.885026 eth/handler.go:763] announced block 2f5189bb to 0 peers in 2562047h47m16.854775807s
+[36mgeth_1_1       |[0m I0729 12:51:24.884875 core/database_util.go:349] stored block receipts [2f5189bb…]
+[36mgeth_1_1       |[0m I0729 12:51:24.885910 core/state/state_object.go:160] 04d6512f6d0d05af47095c52fb35fa00796d18ed: #0 10000000000000000000 (+ 5000000000000000000)
+[36mgeth_1_1       |[0m I0729 12:51:24.886433 miner/worker.go:555] commit new work on block 2 with 0 txs & 0 uncles. Took 2.579006ms
+[36mgeth_1_1       |[0m I0729 12:51:24.887033 core/state/state_object.go:160] 04d6512f6d0d05af47095c52fb35fa00796d18ed: #0 10000000000000000000 (+ 5000000000000000000)
+[36mgeth_1_1       |[0m I0729 12:51:24.887635 miner/worker.go:555] commit new work on block 2 with 0 txs & 0 uncles. Took 715.051µs
+[36mgeth_1_1       |[0m I0729 12:51:24.887808 miner/agent.go:118] (re)started agent[0]. mining...
+[36mgeth_1_1       |[0m I0729 12:51:24.887542 miner/agent.go:118] (re)started agent[0]. mining...
+[36mgeth_1_1       |[0m I0729 12:51:24.900662 ethash.go:99] Done generating cache for epoch 1, it took 1.648005409s
+[36mgeth_1_1       |[0m I0729 12:51:32.132669 core/database_util.go:314] stored block total difficulty [338619cc…]: 3144193
+[36mgeth_1_1       |[0m I0729 12:51:32.132746 core/database_util.go:299] stored block body [338619cc…]
+[36mgeth_1_1       |[0m I0729 12:51:32.133419 core/database_util.go:284] stored header #2 [338619cc…]
+[36mgeth_1_1       |[0m I0729 12:51:32.134157 miner/worker.go:337] 🔨  Mined block (#2 / 338619cc). Wait 5 blocks for confirmation
+[36mgeth_1_1       |[0m I0729 12:51:32.134471 core/state/state_object.go:160] 04d6512f6d0d05af47095c52fb35fa00796d18ed: #0 15000000000000000000 (+ 5000000000000000000)
+[36mgeth_1_1       |[0m I0729 12:51:32.134889 miner/worker.go:555] commit new work on block 3 with 0 txs & 0 uncles. Took 688.173µs
+[36mgeth_1_1       |[0m I0729 12:51:32.135150 core/state/state_object.go:160] 04d6512f6d0d05af47095c52fb35fa00796d18ed: #0 15000000000000000000 (+ 5000000000000000000)
+[36mgeth_1_1       |[0m I0729 12:51:32.135288 miner/worker.go:555] commit new work on block 3 with 0 txs & 0 uncles. Took 343.047µs
+[36mgeth_1_1       |[0m I0729 12:51:32.135318 miner/agent.go:118] (re)started agent[0]. mining...
+[36mgeth_1_1       |[0m I0729 12:51:32.135824 eth/handler.go:752] propagated block 338619cc to 0 peers in 2562047h47m16.854775807s
+[36mgeth_1_1       |[0m I0729 12:51:32.136264 eth/handler.go:763] announced block 338619cc to 0 peers in 2562047h47m16.854775807s
+[36mgeth_1_1       |[0m I0729 12:51:32.136397 eth/handler.go:763] announced block 338619cc to 0 peers in 2562047h47m16.854775807s
+[36mgeth_1_1       |[0m I0729 12:51:32.136986 core/database_util.go:349] stored block receipts [338619cc…]
+[36mgeth_1_1       |[0m I0729 12:51:32.137437 miner/agent.go:118] (re)started agent[0]. mining...
+[36mgeth_1_1       |[0m I0729 12:51:34.286480 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 12:51:54.288104 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 12:52:14.292316 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 12:52:34.294452 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 12:52:54.297285 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 12:53:14.298954 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 12:53:34.301119 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 12:53:54.311341 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 12:54:14.314109 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 12:54:34.315289 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 12:54:54.315759 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 12:55:14.316043 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 12:55:34.316283 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 12:55:54.317173 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 12:56:14.317548 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 12:56:34.318890 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 12:56:54.320177 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 12:57:14.321702 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 12:57:34.324205 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 12:57:54.325185 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 12:58:14.325757 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 12:58:34.326791 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 12:58:54.327443 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 12:59:14.328590 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 12:59:34.329213 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 12:59:54.330991 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:00:14.332083 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:00:34.332860 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:00:54.333223 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:01:14.333468 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:01:34.334330 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:01:54.334982 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:02:14.335690 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:02:34.337298 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:02:54.338532 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:03:14.339652 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:03:34.340246 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:03:54.341699 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:04:14.344272 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:04:34.344829 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:04:54.345770 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:05:14.346783 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:05:34.347403 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:05:54.288929 p2p/nat/nat.go:120] refresh port mapping tcp:30303 -> 30303 (ethereum p2p) using UPnP or NAT-PMP
+[36mgeth_1_1       |[0m I0729 13:05:54.289311 p2p/nat/nat.go:122] network port tcp:30303 could not be mapped: no UPnP or NAT-PMP router discovered
+[36mgeth_1_1       |[0m I0729 13:05:54.348063 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:06:14.349163 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:06:34.354008 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:06:54.356582 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:07:14.357655 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:07:34.358457 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:07:54.359710 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:08:14.360967 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:08:34.362036 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:08:54.362686 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:09:14.363606 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:09:34.364312 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:09:54.366225 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:10:14.367022 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:10:34.368581 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:10:54.369891 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:11:14.371428 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:11:34.371951 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:11:54.372834 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:12:14.374327 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:12:34.375542 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:12:54.376886 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:13:14.380087 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:13:34.380789 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:13:54.382778 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:14:14.384198 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:14:34.385084 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:14:54.385620 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:15:14.386216 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:15:34.389088 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:15:54.389554 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:16:14.391104 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:16:34.392940 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:16:54.395242 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:17:14.397205 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:17:34.400769 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:17:54.402495 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:18:14.404439 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:18:34.405219 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:18:54.407095 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:19:14.410028 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:19:34.414121 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:19:54.418568 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:20:14.420008 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:20:34.421780 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:20:54.289929 p2p/nat/nat.go:120] refresh port mapping tcp:30303 -> 30303 (ethereum p2p) using UPnP or NAT-PMP
+[36mgeth_1_1       |[0m I0729 13:20:54.290050 p2p/nat/nat.go:122] network port tcp:30303 could not be mapped: no UPnP or NAT-PMP router discovered
+[36mgeth_1_1       |[0m I0729 13:20:54.423389 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:21:14.423817 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:21:34.424593 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:21:54.436991 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:22:14.438702 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:22:34.439332 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:22:54.441113 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:23:14.442401 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:23:34.444118 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:23:54.446055 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:24:14.447285 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:24:34.448627 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:24:54.449017 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:25:14.450528 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:25:34.452130 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:25:54.454203 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:26:14.456328 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:26:34.457178 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:26:54.458343 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:27:14.458794 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:27:34.460955 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:27:54.461633 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:28:14.462749 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:28:34.464459 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:28:54.466348 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:29:14.467184 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:29:34.467840 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:29:54.468325 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:30:14.469739 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:30:34.470163 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:30:54.470702 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:31:14.471091 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:31:34.472450 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:31:54.473062 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:32:14.473576 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:32:34.473838 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:32:54.475802 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:33:14.477118 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:33:34.477998 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:33:54.478530 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:34:14.479047 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:34:34.480133 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:34:54.481297 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:35:14.482354 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:35:34.483337 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:35:54.290336 p2p/nat/nat.go:120] refresh port mapping tcp:30303 -> 30303 (ethereum p2p) using UPnP or NAT-PMP
+[36mgeth_1_1       |[0m I0729 13:35:54.290443 p2p/nat/nat.go:122] network port tcp:30303 could not be mapped: no UPnP or NAT-PMP router discovered
+[36mgeth_1_1       |[0m I0729 13:35:54.485178 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:36:14.486739 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:36:34.488472 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[36mgeth_1_1       |[0m I0729 13:36:54.490560 eth/downloader/downloader.go:1942] Quality of service: rtt 20s, conf 1.000, ttl 1m0s
+[33methereumplay_tx_firer_1 exited with code 137
+[0m[36methereumplay_geth_1_1 exited with code 2
+[0m

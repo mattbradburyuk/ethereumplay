@@ -8,3 +8,34 @@ to get to a console on a running geth image:
 
 
 
+In order to mount a Mac directory onto a Vbox VM machine: 
+
+	see : https://forums.virtualbox.org/viewtopic.php?t=15868
+
+	1) in VBox Manager go to Settings -> SharedFolders
+
+	2) select '+'
+
+	3) Folder path: set to mav folder
+
+	4) Folder name: what you want to call it on VM
+
+	5) check ' Auto-mount' (didn't work)
+
+	when VM running: 
+
+	# sudo mount -t vboxsf <folder on mac>  <where to mount on VM>
+	eg 
+	# sudo mount -t vboxsf dev /mnt/dev
+
+
+{ jsonrpc: '2.0',
+  id: '4227a6c0-9fb2-4312-a832-f4481c3a1a8a',
+  result:
+   { id: 'f39cd4f7249b2bb7dec7e2a0c2fbccbdc2195f78da2236690a2c270d9d41ba39ce63694cde4f7a250eb8566a413872bcc1abf4bdcd6a8f49c80b850be48bcc26',
+     name: 'Geth/v1.4.7-stable-667a386d/linux/go1.6.2',
+     enode: 'enode://f39cd4f7249b2bb7dec7e2a0c2fbccbdc2195f78da2236690a2c270d9d41ba39ce63694cde4f7a250eb8566a413872bcc1abf4bdcd6a8f49c80b850be48bcc26@[::]:30303?discport=0',
+     ip: '::',
+     ports: { discovery: 0, listener: 30303 },
+     listenAddr: '[::]:30303',
+     protocols: { eth: [Object] } } }

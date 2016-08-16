@@ -273,7 +273,10 @@ func makeDefaultExtra() []byte {
 // blocking mode, waiting for it to be shut down.
 func geth(ctx *cli.Context) error {
 
-	glog.V(logger.Warn).Infoln("I love hoofey suasages") // MB add
+
+
+
+	glog.V(logger.Warn).Infoln("show me ctx: ", ctx) // MB add
 
 
 	node := utils.MakeSystemNode(clientIdentifier, verString, relConfig, makeDefaultExtra(), ctx)

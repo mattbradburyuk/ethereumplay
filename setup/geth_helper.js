@@ -77,6 +77,7 @@ function nodeInfoResponse(err, response){
     if (err) {
         console.log('err: ',JSON.stringify(err));
     } else {
+        console.log("admin_nodeInfo response: ", response);
         var id = response.result.id;
         var enode = 'enode://'+id+'@'+'172.21.0.2' + ':30303';
         // console.log(enode)
@@ -126,7 +127,7 @@ function startBothMining() {
 
 function stopBothMining(){
     console.log('stopping both nodes mining')
-    client1.request('miner_stop', [1], logResponse);
+    client1.request('miner_stop', [1], logResponse); // should this be []??? why does it still work??
     client2.request('miner_stop', [1], logResponse);
 
 }

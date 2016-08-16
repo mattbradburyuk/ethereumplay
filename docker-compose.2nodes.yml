@@ -21,13 +21,4 @@ services:
      - "8081:8081"
     depends_on:
      - geth_2
-  tx_listener:
-    image: ethereumplay/tx_listener
-    depends_on:
-     - tx_firer
-  ws_server:
-    image: ws_server
-    ports:
-     - "8082:8080"
-    depends_on:
-     - tx_listener
+

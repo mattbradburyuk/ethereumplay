@@ -1,0 +1,23 @@
+<component name="libraryTable">
+  <library name="GOPATH &lt;ethereumplay&gt;">
+    <CLASSES>
+      <root url="file://$USER_HOME$/go_projects/src/hello" />
+      <root url="file://$USER_HOME$/go_projects/src/.idea" />
+      <root url="file://$USER_HOME$/go_projects/src/emerald" />
+      <root url="file://$USER_HOME$/go_projects/src/gopkg.in" />
+      <root url="file://$USER_HOME$/go_projects/src/github.com" />
+      <root url="file://$USER_HOME$/go_projects/src/golang.org" />
+    </CLASSES>
+    <SOURCES>
+      <root url="file://$USER_HOME$/go_projects/src/hello" />
+      <root url="file://$USER_HOME$/go_projects/src/.idea" />
+      <root url="file://$USER_HOME$/go_projects/src/emerald" />
+      <root url="file://$USER_HOME$/go_projects/src/gopkg.in" />
+      <root url="file://$USER_HOME$/go_projects/src/github.com" />
+      <root url="file://$USER_HOME$/go_projects/src/golang.org" />
+    </SOURCES>
+    <excluded>
+      <root url="file://$PROJECT_DIR$" />
+    </excluded>
+  </library>
+</component>

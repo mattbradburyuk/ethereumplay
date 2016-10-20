@@ -1,0 +1,30 @@
+/*
+	//glog.Infof("Infof: validateTx called, tx: %v", tx)	// MB add
+	//glog.Infof("tx.Hash(): %v", tx.Hash())
+	//glog.Infof("tx.Size(): %v", tx.Size())
+	//glog.Infof("tx.From(): %v", tx.From())
+	//glog.Infof("tx.Gas): %v", tx.Gas())
+	//glog.Infof("tx.GasPrice(): %v", tx.GasPrice())
+	//glog.Infof("tx.Value(): %v", tx.Value())
+	//glog.Infof("tx.Nonce(): %v", tx.Nonce())
+	//glog.Infof("tx.Cost(): %v", tx.Cost())
+
+
+	//type Transaction struct {
+	//	data txdata
+	//	// caches
+	//	hash atomic.Value
+	//	size atomic.Value
+	//	from atomic.Value
+	//}
+	//
+	//type txdata struct {
+	//	AccountNonce    uint64
+	//	Price, GasLimit *big.Int
+	//	Recipient       *common.Address `rlp:"nil"` // nil means contract creation
+	//	Amount          *big.Int
+	//	Payload         []byte
+	//	V               byte     // signature
+	//	R, S            *big.Int // signature
+	//}
+*/

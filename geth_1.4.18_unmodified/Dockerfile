@@ -5,7 +5,7 @@ WORKDIR /root/
 # install Go, clone the go-ethereum source code and check out the relevant version
 RUN apt-get update && apt-get install -y git build-essential libgmp3-dev golang
 RUN git clone https://github.com/ethereum/go-ethereum
-RUN (cd go-ethereum && git checkout v1.4.7)
+RUN (cd go-ethereum && git checkout v1.4.18)
 
 # make geth from source code
 RUN (cd go-ethereum && make geth)
@@ -18,6 +18,7 @@ RUN ./go-ethereum/build/bin/geth makedag 0 ~/.ethash
 # add substituted source files
 #ADD protocol_params.go go-ethereum/params/
 ADD modified_files/main.go go-ethereum/cmd/geth/
+
 
 # removes installation of geth (leaving /.ethash) and remakes using substituted files
 RUN (cd go-ethereum && make clean && make geth)

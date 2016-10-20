@@ -16,4 +16,4 @@ sleep 3         # sleep to give a short pause before setting up the geths
 
 echo 'single_node_helper.js'
 
-node geth_1.4.7_vanilla/single_node_helper.js
+node geth_1.4.18_unmodified/single_node_helper.js

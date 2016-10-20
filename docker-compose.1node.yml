@@ -1,7 +1,7 @@
 version: '2'
 services:
   geth_1:
-    image: ethereumplay/geth_1.4.7_vanilla
+    image: ethereumplay/geth_1.4.18_unmodified
     ports:
      - "8541:8545"
      - "30301:30303"

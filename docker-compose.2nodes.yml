@@ -1,24 +1,19 @@
 version: '2'
 services:
   geth_1:
-    image: ethereumplay/geth_1.4.7_vanilla
+    image: ethereumplay/geth_1.4.18_unmodified
     ports:
      - "8541:8545"
      - "30301:30303"
      - "8551:8546"
      - "6060:6060"
   geth_2:
-    image: ethereumplay/geth_1.4.7_vanilla
+    image: ethereumplay/geth_1.4.18_unmodified
     ports:
      - "8542:8545"
      - "30302:30303"
      - "8552:8546"
     depends_on:
      - geth_1
-  tx_firer:
-    image: ethereumplay/tx_firer
-    ports:
-     - "8081:8081"
-    depends_on:
-     - geth_2
+
 

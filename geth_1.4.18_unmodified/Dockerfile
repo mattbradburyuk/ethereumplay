@@ -30,6 +30,9 @@ COPY CustomGenesis.json CustomGenesis.json
 # bootstraps and initialises a new genesis block (JSON)
 RUN ./go-ethereum/build/bin/geth init ./CustomGenesis.json
 
+ADD modified_files/limits.conf /etc/security/
+
+
 # exposes ports on the docker container (this does not do the mapping to unique ports)
 
 EXPOSE 8545

@@ -13,13 +13,13 @@
 // Set up jayson and web3 objects
 
 var jayson = require('jayson');
-var client1 = jayson.client.http('http://192.168.99.100:8541');
+var client1 = jayson.client.http('http://0.0.0.0:8541');
 
 const Web3 = require('web3');
 const web3geth1 = new Web3();
 
 
-setProvider(web3geth1, '192.168.99.100', 8541);
+setProvider(web3geth1, '0.0.0.0', 8541);
 
 
 function setProvider(web3, gethHost, gethPort) {

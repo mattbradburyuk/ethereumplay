@@ -90,12 +90,12 @@ function sendCash() {
 
         var rawTx = {
             nonce: tx_count,
-            gasPrice: '0x1210000000',
-            gasLimit: '0x2710000',
+            gasPrice: '0x1210000',
+            gasLimit: '0x27100000',
             from: '0x46f1ad5c40ff2a7de6c2c621d07334e6dab8b49d',
             to: '0x316249bae00caca882d826ab2a61a4bc3082fcd2',
             //gas: '121000',
-            value: '0x10000000000000000'
+            value: '0x1000000000000'
             // value: web3.toWei(5,'ether').toString(),
             //data: '0x00'
         };

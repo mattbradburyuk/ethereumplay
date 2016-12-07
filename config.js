@@ -1,7 +1,7 @@
 module.exports = {
 
     rpc: {
-        ip: "0.0.0.0"
+        ip: "0.0.0.0",
         port: "8541"
     },
     configs: {

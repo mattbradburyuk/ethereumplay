@@ -9,14 +9,18 @@ To use, roughly (needs tidying up):
 2) Build the docker images 
 
 ```bash
-$ cd geth_1.4.7_vanila
+$ cd geth_1.4.18_vanila
 $ sh dockerBuild.sh
 
-then
 
-$ cd ../tx_firer
-$ sh tx_firerBuild.sh
+```
 
+
+3) run npm install to install the node dependencies
+
+```
+$ cd ../
+$ npm install
 ```
 
 

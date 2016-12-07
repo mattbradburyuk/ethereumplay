@@ -24,7 +24,7 @@ $ npm install
 ```
 
 
-3) Bring up the geths in ethereumplay directory:
+4) Bring up the geths in ethereumplay directory:
 
 ```bash
 $ sh bring_up_one_node.sh
@@ -33,7 +33,7 @@ $ sh bring_up_two_nodes.sh
 
 ```
 
-4) To tear down the geths:
+5) To tear down the geths:
 
 ```bash
 $ sh take_down_all.sh

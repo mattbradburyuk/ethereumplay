@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="GOPATH &lt;ethereumplay&gt;">
+    <CLASSES>
+      <root url="file://$USER_HOME$/go_projects/src/github.com" />
+      <root url="file://$USER_HOME$/go_projects/src/.idea" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$USER_HOME$/go_projects/src/github.com" />
+      <root url="file://$USER_HOME$/go_projects/src/.idea" />
+    </SOURCES>
+    <excluded>
+      <root url="file://$PROJECT_DIR$" />
+    </excluded>
+  </library>
+</component>

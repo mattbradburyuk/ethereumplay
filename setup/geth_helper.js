@@ -33,15 +33,15 @@ console.log('starting with options:',JSON.stringify(options));
 // Set up jayson and web3 objects
 
 var jayson = require('jayson');
-var client1 = jayson.client.http('http://192.168.99.100:8541');
-var client2 = jayson.client.http('http://192.168.99.100:8542');
+var client1 = jayson.client.http('http://0.0.0.0:8541');
+var client2 = jayson.client.http('http://0.0.0.0:8542');
 
 const Web3 = require('web3');
 const web3geth1 = new Web3();
 const web3geth2 = new Web3();
 
-setProvider(web3geth1, '192.168.99.100', 8541);
-setProvider(web3geth2, '192.168.99.100', 8542);
+setProvider(web3geth1, '0.0.0.0', 8541);
+setProvider(web3geth2, '0.0.0.0', 8542);
 
 function setProvider(web3, gethHost, gethPort) {
     var url = 'http://'+gethHost+':'+gethPort;
@@ -79,7 +79,7 @@ function nodeInfoResponse(err, response){
     } else {
         console.log("admin_nodeInfo response: ", response);
         var id = response.result.id;
-        var enode = 'enode://'+id+'@'+'172.21.0.2' + ':30303';
+        var enode = 'enode://'+id+'@'+'172.18.0.2' + ':30303';
         // console.log(enode)
         console.log("Attaching geth_2 to geth_1");
         client2.request('admin_addPeer', [enode],addPeerResponse)
